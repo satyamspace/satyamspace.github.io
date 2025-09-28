@@ -1,0 +1,23 @@
+{
+  "name": "vite-project",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "serve": "vite preview",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy": "gh-pages -d dist"
+  },
+  "devDependencies": {
+    "vite": "^3.2.3"
+  },
+  "dependencies": {
+    "bootstrap": "^3.4.1",
+    "cors": "^2.8.5",
+    "gh": "^2.8.9",
+    "gh-pages": "^4.0.0",
+    "three": "^0.161.0"
+  }
+}
