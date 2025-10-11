@@ -1,0 +1,1425 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta http-equiv="Permissions-Policy" content="interest-cohort=()">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Satyam</title>
+    <link rel = "icon" href = "./images/logo.png" type = "image/x-icon">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="./style.css" >
+    <link rel="stylesheet" type="text/css" href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- <script type="module" src="https://unpkg.com/three@0.146.0/build/three.min.js"></script>
+    <script type="module" src="https://unpkg.com/three@0.146.0/examples/jsm/loaders/GLTFLoader.js"></script> -->
+    <script type="module" src="./main.js"></script>
+
+  </head>
+
+  <body>
+    
+    <canvas class="bg"></canvas>   
+
+    <header class="l-header">
+      <nav class="nav bd-grid">
+            
+            <div class="nav__logo">
+              <a href="#" class="nav__logo">
+                
+                <div class="name_logo">Satyam.</div>
+              </a>
+            </div>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <!-- <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li> -->
+                    <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+                    <!-- <li class="nav__item"><a href="#background" class="nav__link">Background</a></li> -->
+                  
+                    <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
+                    <li class="nav__item"><a href="#proj" class="nav__link">Projects</a></li>
+                    <li class="nav__item"><a href="#achieve" class="nav__link">Achievements</a></li>
+                    <li class="nav__item"><a href="#publications" class="nav__link">Publications</a></li>
+                    <li class="nav__item"><a href="#services" class="nav__link">Services</a></li>
+                    <!-- <li class="nav__item"><a href="#summerschool" class="nav__link" style="width: 120px;">Summer School</a></li> -->
+                </ul>
+            </div>
+          
+            <div class="nav__toggle" id="nav-toggle">
+                <i class='bx bx-menu'></i>
+            </div>
+          </nav>
+    </header>
+    <main>
+       <!-- ===== HOME =====  -->
+      <section class="home bd-grid" >  
+        <div class="home__container"> 
+          <h1 class="home__title">Hello,<br>I'm 
+            <span class="home__title-color">Satyam Shah </span>
+            <h5 style="font-size: 14px;">GIS Specialist • Earth Observation • GeoAI • Cartographer • Web GIS</h5>
+          </h1>
+          <h3 class="home__pos">Let's Connect </h3>
+          <div class="home__social">
+            <a class="button resume" href="./doc/CV_Satyam Shah .pdf" download="CV-Satyam-Shah.pdf">CV <i class='bx bx-download'></i></a>
+            <a href="https://www.linkedin.com/in/satyamshah/" class="home__social-icon left-icon"><i class='bx bxl-linkedin bx-tada-hover'></i></a>
+            <a href="https://github.com/YOUR_GITHUB_USERNAME" class="home__social-icon"><i class='bx bxl-github bx-tada-hover'></i></a>
+            <a href="https://orcid.org/YOUR_ORCID_ID" class="home__social-icon"><i class="fa-brands fa-orcid"></i></a>
+            <a href="https://scholar.google.com/citations?user=YOUR_GOOGLE_SCHOLAR_ID" class="home__social-icon"><i class="fa-brands fa-google-scholar"></i></a>
+            <a href="https://twitter.com/YOUR_TWITTER" class="home__social-icon"><i class='bx bxl-twitter bx-tada-hover'></i></a>
+            <a href="https://instagram.com/YOUR_INSTAGRAM" class="home__social-icon"><i class='bx bxl-instagram bx-tada-hover'></i></a>
+            <a href="mailto: satyamshah444@gmail.com" class="home__social-icon right-icon"><i class='bx bx-envelope bx-tada-hover' ></i></a>
+            <!-- satyamshah444@gmail.com -->
+          </div>
+          <svg class="home__blob" viewBox="0 0 479 467" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <mask id="mask0" mask-type="alpha">
+                <path d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"/>
+            </mask>
+            <g mask="url(#mask0)">
+                <path d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"/>
+                <!-- <image class="home__blob-img" href="Memie4-removebg-preview.png"/> -->
+                <image class="home__blob-img" href="./images/profilephoto2.jpg" width="490px">
+            </g>
+          </svg>
+        </div> 
+      </section>
+
+      <!-- ===== ABOUT =====  -->
+      <section class="about section bd-grid" id="about">   
+        <!-- <h2 class="section-title">About Me</h2> -->
+        <div class="section_header">
+          <p class="about_head">About Me</p>
+        </div>
+
+        <div class="bg__container">
+          <div class="info-sectionbackgroundcu">
+            <div class="about_text">
+              I’m a final semester GIS student passionate about exploring the next big breakthroughs in geospatial science. I enjoy tackling complex spatial challenges, visualizing intricate environmental phenomena, and applying analytical approaches to uncover hidden stories of our planet.
+
+I’ve built strong expertise across the geospatial spectrum, from satellite data analysis, GeoAI, SAR, and hyperspectral processing to LiDAR and advanced image interpretation. I’m also highly skilled in geosurveying and point cloud processing—whether that’s working hands-on in the field or analyzing data on the computer. This versatility allows me to move seamlessly between research-driven analysis, applied problem-solving, and practical geospatial solutions.
+
+Currently, I freelance and collaborate with startups as a remote sensing expert, where I combine environmental knowledge with applied GIS skills to support sustainability, conservation, and innovative geospatial applications. I’m always eager to learn, experiment, and stay ahead of emerging trends, whether through projects, collaborations, or new technologies.
+              
+            </div>
+            <div class="about_img_container">
+              <img src="./images/spacepark.jpeg" class="background__imgabout1">
+              <img src="./images/ita3.JPEG" class="background__imgabout1">
+              <img src="./images/grad1.jpeg" class="background__imgabout1">
+              <img src="./images/totals1.JPEG" class="background__imgabout1">
+              <img src="./images/dweed2.jpeg" class="background__imgabout1">
+              <img src="./images/lidar3.JPEG" class="background__imgabout1">
+              
+            </div>  
+            <hr style="width: 80%;">
+            <h2 class="bg__title">Academic Background</h2>
+            <div class="timeline_container">
+              <ul class="timeline">
+                <li class="event" data-date="09/2024 – 01/2025 ">
+                  <div class="event_head">Master's Degree </div>
+                  <img src="./images/leic1.jpg" class="background__imgcu">
+                  <p class="uni_title">University of Leicester</p>
+                  <p class="event_content">Master of Science, Geographical Information Science (GIS)</p>
+                </li>
+                <li class="event" data-date=" 06/2022 - 07/2022">
+                  <div class="event_head">Gatsby Plant Science Summer Program</div>
+                  <img src="./images/cam1.png" class="background__imgsz">
+                  <p class="uni_title">University of Cambridge</p>
+                </li>
+                <li class="event" data-date=" 09/2020 - 07/2024">
+                  <div class="event_head">Bachelor’s Degree</div>
+                  <img src="./images/leic1.jpg" class="background__imgpl">
+                  <p class="uni_title">University of Leicester</p>
+                  <p class="event_content">Bachelor of Science, Biological Sciences (Zoology) </p>
+                </li>
+              </ul>
+            </div>
+          <hr style="width: 80%;">
+          <h2 class="bg__title">Professional Background</h2>
+          <div class="timeline_container">
+              <ul class="timeline">
+                <li class="event" data-date="04/2025 – Current">
+                  <div class="event_head">Earth Observation Intern</div>
+                  <img src="./images/spacepark3.png" class="company__logo">
+                  <p class="event_content">Space Park Leicester (SPL), United Kingdom</p>
+                </li>
+                <li class="event" data-date="05/2025 – 07/2025">
+                  <div class="event_head">KTP Project Contributor</div>
+                  <img src="./images/blu.png" class="company__logo">
+                  <p class="event_content">Bluesky International Limited, United Kingdom</p>
+                </li>
+                <li class="event" data-date="03/2023 – Current">
+                  <div class="event_head">Remote Sensing Expert</div>
+                  <img src="./images/carbon.jpeg" class="company__logo">
+                  <p class="event_content">Carbon Keepers, United Kingdom</p>
+                </li>
+                <li class="event" data-date="07/2024 – 09/2024">
+                  <div class="event_head">Student Research Assistant</div>
+                  <img src="./images/forest.png" class="company__logo">
+                  <p class="event_content">National Forest, United Kingdom</p>
+                </li>
+                <li class="event" data-date="03/2025 – 06/2025">
+                  <div class="event_head">Biodiversity Consultant</div>
+                  <img src="./images/leic1.jpg" class="company__logo">
+                  <p class="event_content">University of Leicester, United Kingdom</p>
+                </li>
+                
+                  
+                  
+                
+              </ul>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+
+
+      <!-- ===== SKILLS =====  -->
+      <section class="skills section bd-grid" id="skills">
+        <div class="section_header">
+          <p class="skills_head">Skills</p>
+        </div>
+        <div class="skills__container container bd-grid">
+          <!-- <div class="skills__content grid" data-content id="skills"> -->
+            <div class="skills__content">
+<div class="skills__area">
+  
+  <!-- GIS & Remote Sensing Category -->
+  <div class="skills__category">
+    <h3>GIS & Remote Sensing</h3>
+  </div>
+  
+  <div class="skills__group">
+    <div class="skills__data">
+      <div class="skills_img_container">
+        <img src="./images/earth-engine-logo.png" class="skills__img">
+      </div>
+      <div class="skills_name_container">
+        <h3 class="skills__name">Google Earth Engine</h3>
+      </div>
+    </div>
+  </div>
+
+  <div class="skills__group">
+    <div class="skills__data">
+      <div class="skills_img_container">
+        <img src="./images/arcgis-pro.jpeg" class="skills__img">
+      </div>
+      <div class="skills_name_container">
+        <h3 class="skills__name">ArcGIS Pro</h3>
+      </div>
+    </div>
+  </div>
+
+  <div class="skills__group">
+    <div class="skills__data">
+      <div class="skills_img_container">
+        <img src="./images/arcgis-online-banner-icon_0.png" class="skills__img">
+      </div>
+      <div class="skills_name_container">
+        <h3 class="skills__name">ArcGIS Online</h3>
+      </div>
+    </div>
+  </div>
+
+  <div class="skills__group">
+    <div class="skills__data">
+      <div class="skills_img_container">
+        <img src="./images/logoQgis.png" class="skills__img">
+      </div>
+      <div class="skills_name_container">
+        <h3 class="skills__name">QGIS</h3>
+      </div>
+    </div>
+  </div>
+
+  <div class="skills__group">
+    <div class="skills__data">
+      <div class="skills_img_container">
+        <img src="./images/ecognition.png" class="skills__img">
+      </div>
+      <div class="skills_name_container">
+        <h3 class="skills__name">eCognition</h3>
+      </div>
+    </div>
+  </div>
+
+  <div class="skills__group">
+    <div class="skills__data">
+      <div class="skills_img_container">
+        <img src="./images/Untitled (Logo) (20).png" class="skills__img">
+      </div>
+      <div class="skills_name_container">
+        <h3 class="skills__name">Remote Sensing</h3>
+      </div>
+    </div>
+  </div>
+
+  <div class="skills__group">
+    <div class="skills__data">
+      <div class="skills_img_container">
+        <img src="./images/Untitled (Logo) (19).png" class="skills__img">
+      </div>
+      <div class="skills_name_container">
+        <h3 class="skills__name">Web Cartography</h3>
+      </div>
+    </div>
+  </div>
+
+  <div class="skills__group">
+  <div class="skills__data">
+    <div class="skills_img_container">
+      <img src="./images/erdasimagine1.png" class="skills__img">
+    </div>
+    <div class="skills_name_container">
+      <h3 class="skills__name">ERDAS IMAGINE</h3>
+    </div>
+  </div>
+</div>
+
+<div class="skills__group">
+  <div class="skills__data">
+    <div class="skills_img_container">
+      <img src="./images/enviii1.webp" class="skills__img">
+    </div>
+    <div class="skills_name_container">
+      <h3 class="skills__name">ENVI</h3>
+    </div>
+  </div>
+</div>
+
+<div class="skills__group">
+  <div class="skills__data">
+    <div class="skills_img_container">
+      <img src="https://leafletjs.com/docs/images/logo.png" class="skills__img">
+    </div>
+    <div class="skills_name_container">
+      <h3 class="skills__name">Leaflet</h3>
+    </div>
+  </div>
+</div>
+
+<div class="skills__group">
+  <div class="skills__data">
+    <div class="skills_img_container">
+      <img src="https://cdn.worldvectorlogo.com/logos/mapbox-2.svg" class="skills__img">
+    </div>
+    <div class="skills_name_container">
+      <h3 class="skills__name">Mapbox</h3>
+    </div>
+  </div>
+</div>
+
+<div class="skills__group">
+  <div class="skills__data">
+    <div class="skills_img_container">
+      <img src="https://raw.githubusercontent.com/python-visualization/folium/main/docs/_static/folium_logo.png" class="skills__img">
+    </div>
+    <div class="skills_name_container">
+      <h3 class="skills__name">Folium</h3>
+    </div>
+  </div>
+</div>
+
+  <!-- Programming & Scripting Category -->
+  <div class="skills__category">
+    <h3>Programming & Scripting</h3>
+  </div>
+
+  <div class="skills__group">
+    <div class="skills__data">
+      <div class="skills_img_container">
+        <img src="./images/Python-logo-notext.svg.png" class="skills__img">
+      </div>
+      <div class="skills_name_container">
+        <h3 class="skills__name">Python</h3>
+      </div>
+    </div>
+  </div>
+
+  <div class="skills__group">
+    <div class="skills__data">
+      <div class="skills_img_container">
+        <img src="./images/front_end_icon.png" class="skills__img">
+      </div>
+      <div class="skills_name_container">
+        <h3 class="skills__name">JavaScript</h3>
+      </div>
+    </div>
+  </div>
+
+  <div class="skills__group">
+  <div class="skills__data">
+    <div class="skills_img_container">
+      <img src="https://www.r-project.org/logo/Rlogo.png" class="skills__img">
+    </div>
+    <div class="skills_name_container">
+      <h3 class="skills__name">R</h3>
+    </div>
+  </div>
+</div>
+
+<div class="skills__group">
+  <div class="skills__data">
+    <div class="skills_img_container">
+      <img src="https://nodejs.org/static/images/logo.svg" class="skills__img">
+    </div>
+    <div class="skills_name_container">
+      <h3 class="skills__name">Node.js</h3>
+    </div>
+  </div>
+</div>
+
+<div class="skills__group">
+  <div class="skills__data">
+    <div class="skills_img_container">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/9/92/LaTeX_logo.svg" class="skills__img">
+    </div>
+    <div class="skills_name_container">
+      <h3 class="skills__name">LaTeX</h3>
+    </div>
+  </div>
+</div>
+
+  <!-- Geomatics Surveying Category -->
+<div class="skills__category">
+  <h3>Geomatics & Surveying</h3>
+</div>
+
+<!-- Field Equipment & Methods -->
+<div class="skills__group">
+  <div class="skills__data">
+    <div class="skills_img_container">
+      <img src="./images/totalstation.jpeg" class="skills__img">
+    </div>
+    <div class="skills_name_container">
+      <h3 class="skills__name">Total Station</h3>
+    </div>
+  </div>
+</div>
+
+<div class="skills__group">
+  <div class="skills__data">
+    <div class="skills_img_container">
+      <img src="./images/gnss.jpg" class="skills__img">
+    </div>
+    <div class="skills_name_container">
+      <h3 class="skills__name">GNSS/GPS</h3>
+    </div>
+  </div>
+</div>
+
+<div class="skills__group">
+  <div class="skills__data">
+    <div class="skills_img_container">
+      <img src="./images/drone.png" class="skills__img">
+    </div>
+    <div class="skills_name_container">
+      <h3 class="skills__name">UAV/Drone</h3>
+    </div>
+  </div>
+</div>
+
+<div class="skills__group">
+  <div class="skills__data">
+    <div class="skills_img_container">
+      <img src="./images/tls.jpg" class="skills__img">
+    </div>
+    <div class="skills_name_container">
+      <h3 class="skills__name">LiDAR/TLS</h3>
+    </div>
+  </div>
+</div>
+
+<div class="skills__group">
+  <div class="skills__data">
+    <div class="skills_img_container">
+      <img src="./images/sfm .jpeg" class="skills__img">
+    </div>
+    <div class="skills_name_container">
+      <h3 class="skills__name">SfM Photogrammetry</h3>
+    </div>
+  </div>
+</div>
+
+<!-- Processing Software -->
+<div class="skills__group">
+  <div class="skills__data">
+    <div class="skills_img_container">
+      <img src="./images/pix4d.jpeg" class="skills__img">
+    </div>
+    <div class="skills_name_container">
+      <h3 class="skills__name">Pix4D</h3>
+    </div>
+  </div>
+</div>
+
+<div class="skills__group">
+  <div class="skills__data">
+    <div class="skills_img_container">
+      <img src="./images/cloudcompare.jpeg" class="skills__img">
+    </div>
+    <div class="skills_name_container">
+      <h3 class="skills__name">CloudCompare</h3>
+    </div>
+  </div>
+</div>
+
+<div class="skills__group">
+  <div class="skills__data">
+    <div class="skills_img_container">
+      <img src="./images/odm.png" class="skills__img">
+    </div>
+    <div class="skills_name_container">
+      <h3 class="skills__name">OpenDroneMap</h3>
+    </div>
+  </div>
+</div>
+
+<div class="skills__group">
+  <div class="skills__data">
+    <div class="skills_img_container">
+      <img src="./images/metashape.jpeg" class="skills__img">
+    </div>
+    <div class="skills_name_container">
+      <h3 class="skills__name">Agisoft Metashape</h3>
+    </div>
+  </div>
+</div>
+
+<div class="skills__group">
+  <div class="skills__data">
+    <div class="skills_img_container">
+      <img src="./images/3d.jpeg" class="skills__img">
+    </div>
+    <div class="skills_name_container">
+      <h3 class="skills__name">3D Reconstruction</h3>
+    </div>
+  </div>
+</div>
+
+<div class="skills__group">
+  <div class="skills__data">
+    <div class="skills_img_container">
+      <img src="./images/surfer.jpeg" class="skills__img">
+    </div>
+    <div class="skills_name_container">
+      <h3 class="skills__name">Surfer</h3>
+    </div>
+  </div>
+</div>
+
+<div class="skills__group">
+  <div class="skills__data">
+    <div class="skills_img_container">
+      <img src="./images/meshlab.png" class="skills__img">
+    </div>
+    <div class="skills_name_container">
+      <h3 class="skills__name">MeshLab</h3>
+    </div>
+  </div>
+</div>
+
+  <!-- Data Visualization & Analysis Category -->
+  <div class="skills__category">
+    <h3>Data Visualization & Analysis</h3>
+  </div>
+
+  <div class="skills__group">
+    <div class="skills__data">
+      <div class="skills_img_container">
+        <img src="./images/Microsoft-Power-BI-Symbol.png" class="skills__img">
+      </div>
+      <div class="skills_name_container">
+        <h3 class="skills__name">Power BI</h3>
+      </div>
+    </div>
+  </div>
+
+  <div class="skills__group">
+    <div class="skills__data">
+      <div class="skills_img_container">
+        <img src="./images/Untitled (Logo) (21).png" class="skills__img">
+      </div>
+      <div class="skills_name_container">
+        <h3 class="skills__name">Streamlit</h3>
+      </div>
+    </div>
+  </div>
+
+  <div class="skills__group">
+  <div class="skills__data">
+    <div class="skills_img_container">
+      <img src="https://logos-world.net/wp-content/uploads/2021/10/Tableau-Logo.png" class="skills__img">
+    </div>
+    <div class="skills_name_container">
+      <h3 class="skills__name">Tableau</h3>
+    </div>
+  </div>
+</div>
+
+<div class="skills__group">
+  <div class="skills__data">
+    <div class="skills_img_container">
+      <img src="https://matplotlib.org/_static/logo2_compressed.svg" class="skills__img">
+    </div>
+    <div class="skills_name_container">
+      <h3 class="skills__name">Matplotlib</h3>
+    </div>
+  </div>
+</div>
+
+<div class="skills__group">
+  <div class="skills__data">
+    <div class="skills_img_container">
+      <img src="https://images.plot.ly/logo/new-branding/plotly-logomark.png" class="skills__img">
+    </div>
+    <div class="skills_name_container">
+      <h3 class="skills__name">Plotly</h3>
+    </div>
+  </div>
+</div>
+
+<div class="skills__group">
+  <div class="skills__data">
+    <div class="skills_img_container">
+      <img src="./images/pandas111.png" class="skills__img">
+    </div>
+    <div class="skills_name_container">
+      <h3 class="skills__name">Pandas</h3>
+    </div>
+  </div>
+</div>
+
+<div class="skills__group">
+  <div class="skills__data">
+    <div class="skills_img_container">
+      <img src="https://numpy.org/images/logo.svg" class="skills__img">
+    </div>
+    <div class="skills_name_container">
+      <h3 class="skills__name">NumPy</h3>
+    </div>
+  </div>
+</div>
+
+<div class="skills__group">
+  <div class="skills__data">
+    <div class="skills_img_container">
+      <img src="https://scipy.org/images/logo.svg" class="skills__img">
+    </div>
+    <div class="skills_name_container">
+      <h3 class="skills__name">SciPy</h3>
+    </div>
+  </div>
+</div>
+
+  <!-- Machine Learning & AI Category -->
+  <div class="skills__category">
+    <h3>Machine Learning & AI</h3>
+  </div>
+
+  <div class="skills__group">
+    <div class="skills__data">
+      <div class="skills_img_container">
+        <img src="./images/artificial-intelligence.png" class="skills__img">
+      </div>
+      <div class="skills_name_container">
+        <h3 class="skills__name">ML/AI</h3>
+      </div>
+    </div>
+  </div>
+
+  <div class="skills__group">
+    <div class="skills__data">
+      <div class="skills_img_container">
+        <img src="./images/text.png" class="skills__img">
+      </div>
+      <div class="skills_name_container">
+        <h3 class="skills__name">Prompt Engineer</h3>
+      </div>
+    </div>
+  </div>
+
+  <div class="skills__group">
+  <div class="skills__data">
+    <div class="skills_img_container">
+      <img src="https://www.tensorflow.org/images/tf_logo_social.png" class="skills__img">
+    </div>
+    <div class="skills_name_container">
+      <h3 class="skills__name">TensorFlow</h3>
+    </div>
+  </div>
+</div>
+
+<div class="skills__group">
+  <div class="skills__data">
+    <div class="skills_img_container">
+      <img src="https://pytorch.org/assets/images/pytorch-logo.png" class="skills__img">
+    </div>
+    <div class="skills_name_container">
+      <h3 class="skills__name">PyTorch</h3>
+    </div>
+  </div>
+</div>
+
+<div class="skills__group">
+  <div class="skills__data">
+    <div class="skills_img_container">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/a/ae/Keras_logo.svg" class="skills__img">
+    </div>
+    <div class="skills_name_container">
+      <h3 class="skills__name">Keras</h3>
+    </div>
+  </div>
+</div>
+
+<div class="skills__group">
+  <div class="skills__data">
+    <div class="skills_img_container">
+      <img src="https://scikit-learn.org/stable/_static/scikit-learn-logo-small.png" class="skills__img">
+    </div>
+    <div class="skills_name_container">
+      <h3 class="skills__name">scikit-learn</h3>
+    </div>
+  </div>
+</div>
+
+  <!-- Databases Category -->
+  <div class="skills__category">
+    <h3>Databases</h3>
+  </div>
+
+  <div class="skills__group">
+    <div class="skills__data">
+      <div class="skills_img_container">
+        <img src="./images/pg.png" class="skills__img">
+      </div>
+      <div class="skills_name_container">
+        <h3 class="skills__name">PostgreSQL</h3>
+      </div>
+    </div>
+  </div>
+
+  <div class="skills__group">
+  <div class="skills__data">
+    <div class="skills_img_container">
+      <img src="https://www.mysql.com/common/logos/logo-mysql-170x115.png" class="skills__img">
+    </div>
+    <div class="skills_name_container">
+      <h3 class="skills__name">MySQL</h3>
+    </div>
+  </div>
+</div>
+
+<div class="skills__group">
+  <div class="skills__data">
+    <div class="skills_img_container">
+      <img src="https://www.mongodb.com/assets/images/global/favicon.ico" class="skills__img">
+    </div>
+    <div class="skills_name_container">
+      <h3 class="skills__name">MongoDB</h3>
+    </div>
+  </div>
+</div>
+
+<div class="skills__group">
+  <div class="skills__data">
+    <div class="skills_img_container">
+      <img src="https://duckdb.org/images/logo-dl/DuckDB_Logo.png" class="skills__img">
+    </div>
+    <div class="skills_name_container">
+      <h3 class="skills__name">DuckDB</h3>
+    </div>
+  </div>
+</div>
+
+<!-- Cloud Platforms Category -->
+<div class="skills__category">
+  <h3>Cloud Platforms</h3>
+</div>
+
+<div class="skills__group">
+  <div class="skills__data">
+    <div class="skills_img_container">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/9/93/Amazon_Web_Services_Logo.svg" class="skills__img">
+    </div>
+    <div class="skills_name_container">
+      <h3 class="skills__name">AWS</h3>
+    </div>
+  </div>
+</div>
+
+<div class="skills__group">
+  <div class="skills__data">
+    <div class="skills_img_container">
+      <img src="https://www.svgrepo.com/show/353805/google-cloud.svg" class="skills__img">
+    </div>
+    <div class="skills_name_container">
+      <h3 class="skills__name">Google Cloud</h3>
+    </div>
+  </div>
+</div>
+
+<div class="skills__group">
+  <div class="skills__data">
+    <div class="skills_img_container">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/a/a8/Microsoft_Azure_Logo.svg" class="skills__img">
+    </div>
+    <div class="skills_name_container">
+      <h3 class="skills__name">Azure</h3>
+    </div>
+  </div>
+</div>
+
+</div>
+
+      <!-- ===== PROJECTS DEMO =====  -->
+<section class="proj section bd-grid" id="proj">
+  <div class="section_header">
+    <p class="project_head">Projects</p>
+  </div>
+  
+  <div class="projs__container">
+    
+    <!-- Remote Sensing & Computer Vision Category -->
+    <div class="project__subcategory">
+      <h3>Remote Sensing & Computer Vision</h3>
+    </div>
+    
+    <!-- Demo card 1 -->
+    <a href="./doc/AssignmentSen2cube_Parinda.pdf" target="_blank" class="card">
+      <div class="card__img-container">
+        <img class="card__img" src="./images/Screenshot (364).png" alt="unsplash random image" />
+        <div class="card__tags">
+          <span class="card__tag">Sen2cube.at</span>
+        </div>
+      </div>
+      <div class="card__body">
+        <h3 class="card__title">Semantic Earth Observation Data Cube Analysis</h3>
+        <h5 class="card__title">Course: Big Earth Data Concept</h5>
+        <p class="card__detail">
+          This model aims to analyze the correlation between vegetation and bare soil areas and also cloud percentage during 1st January 2018 – 1st January 2019.
+        </p>
+        <p class="card__cta">Read more</p>
+      </div>
+    </a>
+
+    <!-- Demo card 2 -->
+    <a href="./doc/AssignmentEOBrowser_Parinda.pdf" target="_blank" class="card">
+      <div class="card__img-container">
+        <img class="card__img" src="./images/Screenshot (178).png" alt="unsplash random image" />
+        <div class="card__tags">
+          <span class="card__tag">Eo-Browser</span>
+          <span class="card__tag">Sentinel2</span>
+        </div>
+      </div>
+      <div class="card__body">
+        <h3 class="card__title">EO-Browser</h3>
+        <h5 class="card__title">NDSI-Visualized, Sentinel 2</h5>
+        <p class="card__detail">
+          The Sentinel-2 normalised difference snow index can be used to differentiate between cloud and snow cover.
+        </p>
+        <p class="card__cta">Read more</p>
+      </div>
+    </a>
+
+    <!-- Geospatial Data Analytics Category -->
+    <div class="project__subcategory">
+      <h3>Geospatial Data Analytics</h3>
+    </div>
+    
+    <!-- Demo card 3 -->
+    <a href="https://www.arcgis.com/apps/dashboards/614e95b5ec3a4b4da47f5b095adee0b0" target="_blank" class="card">
+      <div class="card__img-container">
+        <img class="card__img" src="./images/skylark.png" alt="unsplash random image" />
+        <div class="card__tags">
+          <span class="card__tag">ArcGIS Online</span>
+          <span class="card__tag">Story Map</span>
+        </div>
+      </div>
+      <div class="card__body">
+        <h3 class="card__title">Geovisualization</h3>
+        <h5 class="card__title">course: Methods in spatial analysis</h5>
+        <p class="card__detail">
+          This dashboard shows the visualization of predator-prey ecological dynamics between Red Fox and Ground-Nesting Skylark.
+        </p>
+        <p class="card__cta">Read more</p>
+      </div>
+    </a>
+
+    
+
+    <!-- Demo card 4 -->
+    <a href="https://appdashboardwildfire-uvch9r5rhparinda.streamlit.app/" target="_blank" class="card">
+      <div class="card__img-container">
+        <img class="card__img" src="./images/Screenshot (2398).png" alt="unsplash random image" />
+        <div class="card__tags">
+          <span class="card__tag">BI</span>
+          <span class="card__tag">Streamlit</span>
+          <span class="card__tag">Dashboard Map</span>
+          <span class="card__tag">Python</span>
+        </div>
+      </div>
+      <div class="card__body">
+        <h3 class="card__title">Wildfire event Dashboard</h3>
+        <h5 class="card__title">Developed by using Folium, Plotly hosted on Streamlit</h5>
+        <p class="card__detail">
+          A dashboard in Python with Streamlit using Folium and Plotly libraries.
+        </p>
+        <p class="card__cta">Read more</p>
+      </div>
+    </a>
+
+    <a href="https://arcg.is/1v8nmn" target="_blank" class="card">
+      <div class="card__img-container">
+         <img class="card__img" src="./images/Screenshot (2409).png" alt="unsplash random image" />
+          <div class="card__tags">
+          <span class="card__tag">ArcGIS Online</span>
+          <span class="card__tag">Story Map</span>
+         </div>
+        </div>
+        <div class="card__body">
+          <h3 class="card__title">Spatial Interpolation</h3>
+          <h5 class="card__title">course: Methods in spatial analysis</h5>
+          <p class="card__detail">
+                This Lab aims to Spatial Interpolation of Annual Precipitation 2010, Thailand which are creating Thiessen polygons area of all Rain Stations, predicting precipitation values from interpolate points, interpolating a raster surface from rain stations by IDW, Checking the results in Geostatistical wizard.
+             
+          </p>
+          <p class="card__cta">Read more</p>
+        </div>
+      </a>
+
+    <a href="https://arcg.is/1v8nmn" target="_blank" class="card">
+      <div class="card__img-container">
+         <img class="card__img" src="./images/Screenshot (2409).png" alt="unsplash random image" />
+          <div class="card__tags">
+          <span class="card__tag">ArcGIS Online</span>
+          <span class="card__tag">Story Map</span>
+         </div>
+        </div>
+        <div class="card__body">
+          <h3 class="card__title">Spatial Interpolation</h3>
+          <h5 class="card__title">course: Methods in spatial analysis</h5>
+          <p class="card__detail">
+                This Lab aims to Spatial Interpolation of Annual Precipitation 2010, Thailand which are creating Thiessen polygons area of all Rain Stations, predicting precipitation values from interpolate points, interpolating a raster surface from rain stations by IDW, Checking the results in Geostatistical wizard.
+             
+          </p>
+          <p class="card__cta">Read more</p>
+        </div>
+      </a>  
+
+    <!-- Cartography & Visualization Category -->
+    <div class="project__subcategory">
+      <h3>Cartography & Visualization</h3>
+    </div>
+    
+    <!-- Demo card 5 -->
+    <a href="./images/Parinda_ArcticSeaIceDecline.png" target="_blank" class="card">
+      <div class="card__img-container">
+        <img class="card__img" src="./images/Parinda_ArcticSeaIceDecline.png" alt="unsplash random image" />
+        <div class="card__tags">
+          <span class="card__tag">ArcGIS Pro</span>
+        </div>
+      </div>
+      <div class="card__body">
+        <h3 class="card__title">Arctic Sea Ice Decline</h3>
+        <h5 class="card__title">Course: Geovisualization and Advanced Catography</h5>
+        <p class="card__detail">
+          The following poster map shows an educational poster-style map that communicates the ongoing loss of sea ice.
+        </p>
+        <p class="card__cta">Read more</p>
+      </div>
+    </a>
+
+    <!-- GeoAI (AI for Geospatial) Category -->
+    <div class="project__subcategory">
+      <h3>GeoAI (AI for Geospatial)</h3>
+    </div>
+    
+    <!-- Demo card 6 -->
+    <a href="https://www.geoinformatics.upol.cz/dprace/magisterske/pannoon24/" target="_blank" class="card">
+      <div class="card__img-container">
+        <img class="card__img" src="./images/chatgpt-icon.webp" alt="unsplash random image"/>
+        <div class="card__tags">
+          <span class="card__tag">Chat GPT</span>
+          <span class="card__tag">Prompt Engineer</span>
+          <span class="card__tag">Python</span>
+          <span class="card__tag">Map Visualization</span>
+        </div>
+      </div>
+      <div class="card__body">
+        <h3 class="card__title">Master's thesis</h3>
+        <h5 class="card__title">Implementation of Artificial Intelligence for Creating Maps</h5>
+        <p class="card__detail">
+          The main objective of this study is to evaluate the quality of employing AI in map generation.
+        </p>
+        <p class="card__cta">Read more</p>
+      </div>
+    </a>
+
+  </div>
+</section>
+    <!-- ===== PUBLICATIONS =====  -->
+<section class="proj section bd-grid" id="publications">
+  <div class="section_header">
+    <p class="publications_head">Publications</p>
+  </div>
+  
+  <div class="projs__container">
+
+    <!-- Publication 1 -->
+    <a href="https://so03.tci-thaijo.org/index.php/jletters/article/view/263761" target="_blank" class="card">
+      <div class="card__img-container">
+        <img class="card__img" src="./images/Screenshot (2416).png" alt="publication image" />
+        <div class="card__tags">
+          <span class="card__tag">Research Paper</span>
+          <span class="card__tag">Water Resources</span>
+          <span class="card__tag">GIS</span>
+        </div>
+      </div>
+      <div class="card__body">
+        <h3 class="card__title">Water Adequacy Assessment for Economic Crops</h3>
+        <h5 class="card__title">Journal of Letters</h5>
+        <p class="card__detail">
+          An Analysis and Assessment of Water Adequacy for Economic Crop Cultivation in Rayong Province using GIS and FAO Penman-Monteith equation.
+        </p>
+        <p class="card__cta">Read paper</p>
+      </div>
+    </a>
+
+    <!-- Add more publication cards here as needed -->
+    <!-- Example template for additional publications:
+    <a href="LINK_TO_PUBLICATION" target="_blank" class="card">
+      <div class="card__img-container">
+        <img class="card__img" src="IMAGE_PATH" alt="publication image" />
+        <div class="card__tags">
+          <span class="card__tag">Tag1</span>
+          <span class="card__tag">Tag2</span>
+        </div>
+      </div>
+      <div class="card__body">
+        <h3 class="card__title">Publication Title</h3>
+        <h5 class="card__title">Journal/Conference Name</h5>
+        <p class="card__detail">
+          Brief description of the publication.
+        </p>
+        <p class="card__cta">Read paper</p>
+      </div>
+    </a>
+    -->
+    
+  </div>
+</section>
+    <!-- ===== CERTIFICATIONS =====  -->
+<section class="proj section bd-grid" id="certifications">
+  <div class="section_header">
+    <p class="certifications_head">Certifications</p>
+  </div>
+  
+  <div class="projs__container">
+
+    <!-- Certification 1 -->
+    <a href="CERTIFICATE_LINK_HERE" target="_blank" class="card">
+      <div class="card__img-container">
+        <img class="card__img" src="./images/CERTIFICATE_IMAGE.png" alt="certification image" />
+        <div class="card__tags">
+          <span class="card__tag">GIS</span>
+          <span class="card__tag">Esri</span>
+        </div>
+      </div>
+      <div class="card__body">
+        <h3 class="card__title">Certificate Name</h3>
+        <h5 class="card__title">Issuing Organization</h5>
+        <p class="card__detail">
+          Brief description of what the certification covers and when it was obtained.
+        </p>
+        <p class="card__cta">View Certificate</p>
+      </div>
+    </a>
+
+    <!-- Certification 2 -->
+    <a href="CERTIFICATE_LINK_HERE" target="_blank" class="card">
+      <div class="card__img-container">
+        <img class="card__img" src="./images/CERTIFICATE_IMAGE.png" alt="certification image" />
+        <div class="card__tags">
+          <span class="card__tag">Remote Sensing</span>
+          <span class="card__tag">Earth Observation</span>
+        </div>
+      </div>
+      <div class="card__body">
+        <h3 class="card__title">Certificate Name</h3>
+        <h5 class="card__title">Issuing Organization</h5>
+        <p class="card__detail">
+          Brief description of what the certification covers and when it was obtained.
+        </p>
+        <p class="card__cta">View Certificate</p>
+      </div>
+    </a>
+
+    <!-- Add more certification cards as needed -->
+    
+  </div>
+</section>
+
+    <!-- ===== Achievement =====  -->
+    <section class="proj section bd-grid" id="achieve">
+      <div class="section_header">
+        <p class="achieve_head">Achievement & Awards</p>
+      </div>
+
+      <div class="projs__container">
+        <a href="https://devpost.com/software/ml4earth-hackathon-2022-parinda-yanika#updates" target="_blank" class="card">
+          <div class="card__img-container">
+            <img class="card__img" src="./images/Screenshot (243).png" alt="unsplash random image" />
+            <div class="card__tags">
+              <span class="card__tag">Python</span>
+              <span class="card__tag">Arcgis PRO</span>
+              <span class="card__tag">SVR Model</span>
+              <span class="card__tag">Remote sensing</span>
+            </div>
+          </div>
+          <div class="card__body">
+            <h3 class="card__title">ML4Earth Hackathon 2022</h3>
+            <h3 class="card__title">The winner, 3rd place</h3>
+            <h9 class="card__title">Future Lab, Technical University of Munich(TUM)</h9>
+            <p class="card__detail">
+              Topic : Crop yield prediction with remote sensing and machine learning and exploring relations with explainable AI.
+             
+            </p>
+            <p class="card__cta">Read more</p>
+          </div>
+        </a>
+
+        <a href="https://devpost.com/software/foresight-drm-disaster-mapping-hackathon-2023" target="_blank" class="card">
+          <div class="card__img-container">
+            <img class="card__img" src="./images/foresightDRM.png" alt="unsplash random image" />
+            <div class="card__tags">
+              <span class="card__tag">GEE</span>
+              <span class="card__tag">GeoServer</span>
+              <span class="card__tag">LeafletJS</span>
+              <span class="card__tag">Frontend</span>
+            </div>
+          </div>
+          <div class="card__body">
+            <h3 class="card__title">Foresight DRM: Disaster Mapping Hackathon 2023</h3>
+            <h3 class="card__title">The winner, 2nd Place</h3>
+            <h9 class="card__title">Global Geo-Intelligence Solutions Ltd.</h9>
+            <p class="card__detail">
+              Topic: find a solution with a positive impact on hurricane management in the Bahamas.
+            
+            </p>
+            <p class="card__cta">Read more</p>
+          </div>
+        </a>
+        <a href="https://devpost.com/software/inferno-tech-stemist-hackii-2023" target="_blank" class="card">
+          <div class="card__img-container">
+            <img class="card__img" src="./images/stemist.png" alt="unsplash random image" />
+            <div class="card__tags">
+              <span class="card__tag">Python</span>
+              <span class="card__tag">GEOSAM</span>
+              <span class="card__tag">GeoPandas</span>
+              <span class="card__tag">Folium</span>
+              <span class="card__tag">Flask</span>
+            </div>
+          </div>
+          <div class="card__body">
+            <h3 class="card__title">
+              STEMist Hack2.0 </h3>
+            <h3 class="card__title">The winner, 2nd Place</h3>
+            <h9 class="card__title">STEMist Education</h9>
+            <p class="card__detail">
+              Topic: Burned area detection in Attica, Greece
+             
+            </p>
+            <p class="card__cta">Read more</p>
+          </div>
+        </a>
+        <a href="https://devpost.com/software/flameguarddispatch" target="_blank" class="card">
+          <div class="card__img-container">
+            <img class="card__img" src="./images/flameguard_dispatch.png" alt="unsplash random image" />
+            <div class="card__tags">
+              <span class="card__tag">HTML</span>
+              <span class="card__tag">JavaScript</span>
+              <span class="card__tag">LeafletJS</span>
+              <span class="card__tag">HighCharts library</span>
+            </div>
+          </div>
+          <div class="card__body">
+            <h3 class="card__title">
+              Tech Optimum Hacks 2023</h3>
+            <h3 class="card__title">The winner, 1st place</h3>
+            <h9 class="card__title">Tech Optimum</h9>
+            <p class="card__detail">
+              Topic: Routing and navigation of fire incidence in California, USA
+             
+            </p>
+            <p class="card__cta">Read more</p>
+          </div>
+        </a>
+        <a href="https://devpost.com/software/ml4earth2023_physics-aware-ml" target="_blank" class="card">
+          <div class="card__img-container">
+            <img class="card__img" src="./images/ML4Earth_2023.png" alt="unsplash random image" />
+            <div class="card__tags">
+              <span class="card__tag">Python</span>
+              <span class="card__tag">Pytorch</span>
+              <span class="card__tag">ML</span>
+              <span class="card__tag">GIS</span>
+              <span class="card__tag">physics-aware ml</span>
+            </div>
+          </div>
+          <div class="card__body">
+            <h3 class="card__title">
+              ML4Earth Hackathon 2023 </h3>
+            <h3 class="card__title">The winner, 1st place</h3>
+            <h9 class="card__title">Future Lab, Technical University of Munich(TUM)</h9>
+            <p class="card__detail">
+              Topic: Using physics-aware machine learning to model and forecast flood events
+             
+            </p>
+            <p class="card__cta">Read more</p>
+          </div>
+        </a>
+        <a href="https://clean-air-coder.onrender.com" target="_blank" class="card">
+          <div class="card__img-container">
+            <img class="card__img" src="./images/cleanair.png" alt="unsplash random image" />
+            <div class="card__tags">
+              <span class="card__tag">Python</span>
+              <span class="card__tag">Arcgis PRO</span>
+              <span class="card__tag">JavaScript</span>
+              <span class="card__tag">scikit-learn</span>
+            </div>
+          </div>
+          <div class="card__body">
+            <h3 class="card__title">
+              Innovation Solving PM2.5 Problem Hackathon</h3>
+            <h3 class="card__title">The winner, 3rd place</h3>
+            <h9 class="card__title">YouTHful Issue</h9>
+            <p class="card__detail">
+              A monitoring platform that shows in-depth information on PM2.5 in each district to help the government assess problems in specific areas.
+             
+            </p>
+            <p class="card__cta">Read more</p>
+          </div>
+        </a>
+        <a href="https://yanikad.github.io/NASA_SpaceApps2023/" target="_blank" class="card">
+          <div class="card__img-container">
+            <img class="card__img" src="./images/nasa.png" alt="unsplash random image" />
+            <div class="card__tags">
+              <span class="card__tag">JavaScript</span>
+              <span class="card__tag">3D website</span>
+              <span class="card__tag">Story Telling</span>
+            </div>
+          </div>
+          <div class="card__body">
+            <h3 class="card__title">NASA Space Apps Challenge</h3>
+            <h3 class="card__title">Participant</h3>
+            <h9 class="card__title">NASA Ames Research Center</h9>
+            <p class="card__detail">
+              ECLIPSE STORY Perspective is Everything: Story telling 3D website about Eclipse
+             
+            </p>
+            <p class="card__cta">Read more</p>
+          </div>
+        </a>
+        <a href="https://devpost.com/software/segment-life-saver" target="_blank" class="card">
+          <div class="card__img-container">
+            <img class="card__img" src="images\Screenshot (1573).png" alt="unsplash random image" />
+            <div class="card__tags">
+              <span class="card__tag">Docker</span>
+              <span class="card__tag">Pytorch</span>
+              <span class="card__tag">React</span>
+              <span class="card__tag">Segmentation</span>
+              <span class="card__tag">Bootstrap</span>
+            </div>
+          </div>
+          <div class="card__body">
+            <h3 class="card__title">Breast cancer segmentation by ML integrating Docker</h3>
+            <h9 class="card__title">Docker AI/ML Hackathon</h9>
+            <p class="card__detail">
+              These containers are designed to provide the tools to help segment the tumor cells out of another which helps a doctor to locate the tumor cell. We have provided the interface for users who would like to segment the cell images and we also provide the fast api container for the developer who would like to implement our api.
+
+             
+            </p>
+            <p class="card__cta">Read more</p>
+          </div>
+        </a>
+        <a href="./doc/Satyam Shah _EYtopten.pdf" target="_blank" class="card">
+          <div class="card__img-container">
+            <img class="card__img" src="./images/yolo_nas.png" alt="unsplash random image" />
+            <div class="card__tags">
+              <span class="card__tag">OpenCV</span>
+              <span class="card__tag">Pytorch</span>
+              <span class="card__tag">YOLO</span>
+              <span class="card__tag">PYQGIS</span>
+            </div>
+          </div>
+          <div class="card__body">
+            <h3 class="card__title">2023 EY Open Science Data Challenge</h3>
+            <h3 class="card__title">Global Semi-Finalist (Top 10)</h3>
+            <h9 class="card__title">Ernst & Young Global Limited.</h9>
+            <p class="card__detail">
+              Implementation of YOLO-NAS for damaged building detection and suggested plan for coastal resilient management
+             
+            </p>
+            <p class="card__cta">Read more</p>
+          </div>
+        </a>
+        
+      </div>
+      </section>
+      
+       <!-- ===== SERVICES =====  -->
+<section class="proj section bd-grid" id="services">
+  <div class="section_header">
+    <p class="services_head">Services</p>
+  </div>
+  
+  <div class="services__container">
+    
+    <!-- Top Row Services -->
+    
+    <!-- Service 1: Geospatial Analysis -->
+    <div class="service__card">
+      <div class="service__icon">
+        <img src="./images/geospat.jpeg" alt="Geospatial Analysis">
+      </div>
+      <h3 class="service__title">Geospatial Analysis</h3>
+      <p class="service__description">
+        Spatial statistics, spatial modelling, site suitability, geoprocessing and map production.
+      </p>
+    </div>
+
+    <!-- Service 2: Remote Sensing -->
+    <div class="service__card">
+      <div class="service__icon">
+        <img src="./images/remotesensing.jpeg" alt="Remote Sensing">
+      </div>
+      <h3 class="service__title">Remote Sensing</h3>
+      <p class="service__description">
+        Satellite & UAV imagery processing, land-use mapping, change detection and feature extraction.
+      </p>
+    </div>
+
+    <!-- Service 3: Cartography & Visualization -->
+    <div class="service__card">
+      <div class="service__icon">
+        <img src="./images/carto.jpg" alt="Cartography & Visualization">
+      </div>
+      <h3 class="service__title">Cartography & Visualization</h3>
+      <p class="service__description">
+        Publication maps, interactive web maps and data storytelling with Mapbox / Leaflet / D3.
+      </p>
+    </div>
+
+    <!-- Service 4: Geospatial Data Science -->
+    <div class="service__card">
+      <div class="service__icon">
+        <img src="./images/spatanal.png" alt="Geospatial Data Science">
+
+      </div>
+      <h3 class="service__title">Geospatial Data Science</h3>
+      <p class="service__description">
+        Machine learning, predictive modelling, object detection and automated geoprocessing pipelines.
+      </p>
+    </div>
+
+    <!-- Bottom Row Services -->
+    
+    <!-- Service 5: Field Surveying & Data Capture -->
+    <div class="service__card">
+      <div class="service__icon">
+        <img src="./images/drone.jpg" alt="Field Surveying & Data Capture">
+      </div>
+      <h3 class="service__title">Field Surveying & Data Capture</h3>
+      <p class="service__description">
+        GNSS/GPS surveys, UAV flight planning & acquisition, total station support and ground truth collection.
+      </p>
+    </div>
+
+    <!-- Service 6: 3D Mapping & Point Clouds -->
+    <div class="service__card">
+      <div class="service__icon">
+        <img src="./images/pointcloud.jpeg" alt="3D Mapping & Point Clouds">
+      </div>
+      <h3 class="service__title">3D Mapping & Point Clouds</h3>
+      <p class="service__description">
+        SfM photogrammetry, LiDAR/TLS processing, point-cloud classification, DEM/DSM and 3D reconstruction.
+      </p>
+    </div>
+
+    <!-- Service 7: Web Maps & Dashboards -->
+    <div class="service__card">
+      <div class="service__icon">
+        <img src="./images/webmap.jpg" alt="Web Maps & Dashboards">
+      </div>
+      <h3 class="service__title">Web Maps & Dashboards</h3>
+      <p class="service__description">
+        Interactive dashboards, web mapping apps, geospatial APIs and cloud deployment for visualization/monitoring.
+      </p>
+    </div>
+
+    <!-- Service 8: Research Support & Consultancy -->
+    <div class="service__card">
+      <div class="service__icon">
+        <img src="./images/research.jpg" alt="Research Support & Consultancy">
+      </div>
+      <h3 class="service__title">Research Support & Consultancy</h3>
+      <p class="service__description">
+        Study design, manuscript/data analysis, reproducible workflows, training and technical reports.
+      </p>
+    </div>
+
+  </div>
+</section>
+ 
+        <!-- ===== Footer =====  -->
+    <footer id="contact">
+      <div class="l-footer">
+        <div class="message bd-grid">
+          <div class="left-contact">
+            <h1>Looking to connect? </h1>
+            
+          </div>
+        <form action="https://formsubmit.co/satyamshah444@gmail.com" id="form" method="POST">
+          <div class="form-body">
+                <div class="form-holder">
+                    <div class="form-content">
+                        <div class="form-items">
+                            <form class="requires-validation" novalidate>
+                                <div class="top-row">
+                                    <div class="field-wrap form-floating">
+                                        <label for="floatingName">Your Name</label>
+                                        <input name="name" type="text" class="form-control" id="floatingName" placeholder="Firstname Lastname">
+                                    </div>
+                                    <div class="field-wrap form-floating">
+                                        <label for="floatingInput">Email address</label>
+                                        <input name="email" type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                                    </div>
+                                </div>
+                                <div class="oth-row">
+                                  <div class="field-wrap form-floating">
+                                    <label for="floatingMessage">Message</label>
+                                    <textarea name="content" type="text" class="form-control" id="floatingMessage" placeholder="Message"></textarea>
+                                  </div>
+                                </div>
+                                <div class="oth-row submit-row">
+                                    <div class="form-button mt-3" id="submit">
+                                        <button type="submit" class="btn button btn-primary">Send</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+          </div>
+        </form>
+        <div class="left-contact">
+          
+        </div>
+      </div>
+      </div>
+    </footer>
+  </body>
+</html>
