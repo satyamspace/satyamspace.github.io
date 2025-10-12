@@ -2199,52 +2199,58 @@ Currently, I freelance and collaborate with startups as a remote sensing expert,
 </section>
  
         <!-- ===== Footer =====  -->
-    <footer id="contact">
-      <div class="l-footer">
-        <div class="message bd-grid">
-          <div class="left-contact">
-            <h1>Looking to connect? </h1>
-            
-          </div>
-        <form action="https://formsubmit.co/satyamshah444@gmail.com" id="form" method="POST">
-          <div class="form-body">
-                <div class="form-holder">
-                    <div class="form-content">
-                        <div class="form-items">
-                            <form class="requires-validation" novalidate>
-                                <div class="top-row">
-                                    <div class="field-wrap form-floating">
-                                        <label for="floatingName">Your Name</label>
-                                        <input name="name" type="text" class="form-control" id="floatingName" placeholder="Firstname Lastname">
-                                    </div>
-                                    <div class="field-wrap form-floating">
-                                        <label for="floatingInput">Email address</label>
-                                        <input name="email" type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-                                    </div>
-                                </div>
-                                <div class="oth-row">
-                                  <div class="field-wrap form-floating">
-                                    <label for="floatingMessage">Message</label>
-                                    <textarea name="content" type="text" class="form-control" id="floatingMessage" placeholder="Message"></textarea>
-                                  </div>
-                                </div>
-                                <div class="oth-row submit-row">
-                                    <div class="form-button mt-3" id="submit">
-                                        <button type="submit" class="btn button btn-primary">Send</button>
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
+<footer id="contact">
+  <div class="l-footer">
+    <div class="message bd-grid">
+      <div class="left-contact">
+        <h1>Looking to connect? </h1>
+      </div>
+      
+      <form action="https://formsubmit.co/satyamshah444@gmail.com" id="form" method="POST">
+        <!-- Anti-spam honeypot field -->
+        <input type="text" name="_honey" style="display:none">
+        
+        <!-- Disable captcha -->
+        <input type="hidden" name="_captcha" value="false">
+        
+        <!-- Success page redirect (create a thanks.html page or remove this line) -->
+        <input type="hidden" name="_next" value="https://satyamspace.github.io/thanks.html">
+        
+        <div class="form-body">
+          <div class="form-holder">
+            <div class="form-content">
+              <div class="form-items">
+                <div class="top-row">
+                  <div class="field-wrap form-floating">
+                    <label for="floatingName">Your Name</label>
+                    <input name="name" type="text" class="form-control" id="floatingName" placeholder="Firstname Lastname" required>
+                  </div>
+                  <div class="field-wrap form-floating">
+                    <label for="floatingInput">Email address</label>
+                    <input name="email" type="email" class="form-control" id="floatingInput" placeholder="name@example.com" required>
+                  </div>
                 </div>
+                <div class="oth-row">
+                  <div class="field-wrap form-floating">
+                    <label for="floatingMessage">Message</label>
+                    <textarea name="message" class="form-control" id="floatingMessage" placeholder="Message" required></textarea>
+                  </div>
+                </div>
+                <div class="oth-row submit-row">
+                  <div class="form-button mt-3" id="submit">
+                    <button type="submit" class="btn button btn-primary">Send</button>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
-        </form>
-        <div class="left-contact">
-          
         </div>
+      </form>
+      
+      <div class="left-contact">
       </div>
-      </div>
-    </footer>
+    </div>
+  </div>
+</footer>
   </body>
 </html>
