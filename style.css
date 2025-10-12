@@ -360,8 +360,8 @@ blockquote p {
 }
 
 .service__icon {
-  width: 100px;
-  height: 100px;
+  width: 130px;
+  height: 130px;
   border-radius: 50%;
   margin: 0 auto 20px;
   overflow: hidden;
@@ -405,8 +405,8 @@ blockquote p {
   }
   
   .service__icon {
-    width: 75px;
-    height: 75px;
+    width: 95px;
+    height: 95px;
     
   }
   
@@ -431,8 +431,8 @@ blockquote p {
   }
   
   .service__icon {
-    width: 65px;
-    height: 65px;
+    width: 85px;
+    height: 85px;
     
   }
   
