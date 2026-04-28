@@ -1,8 +1,6 @@
 import * as THREE from 'https://cdn.skypack.dev/three@0.129.0/build/three.module.js';
 import { GLTFLoader } from 'https://cdn.skypack.dev/three@0.129.0/examples/jsm/loaders/GLTFLoader.js';
 
-
-
 // ─── DEVICE DETECTION ────────────────────────────────────────────────────────
 const isMobile = window.innerWidth < 768;
 
@@ -21,8 +19,6 @@ renderer.setSize(window.innerWidth, window.innerHeight);
 camera.position.setZ(30);
 camera.position.setX(-3);
 renderer.render(scene, camera);
-
-setProgress(15, 'Setting up scene…');
 
 // ─── LIGHTS ──────────────────────────────────────────────────────────────────
 const pointLight = new THREE.PointLight(0xffffff);
@@ -49,8 +45,6 @@ scene.add(pointLight, ambientLight);
   scene.add(new THREE.Points(geometry, material));
 })();
 
-setProgress(30, 'Loading stars…');
-
 // ─── BACKGROUND TEXTURE ───────────────────────────────────────────────────────
 const textureLoader = new THREE.TextureLoader();
 
@@ -58,16 +52,13 @@ textureLoader.load(
   './images/stars-2179083_960_720 (1).jpg',
   (texture) => {
     scene.background = texture;
-    setProgress(55, 'Loading Earth…');
-  },
-  undefined,
-  () => { setProgress(55, 'Loading Earth…'); }
+  }
 );
 
 // ─── SATELLITE (GLTF) ────────────────────────────────────────────────────────
 if (!isMobile) {
   new GLTFLoader().load(
-    '../Satellite/scene.gltf',
+    './Satellite/scene.gltf',
     function (gltf) {
       const model = gltf.scene;
       scene.add(model);
@@ -76,18 +67,14 @@ if (!isMobile) {
         sat.position.set(2, -7, 0);
         sat.rotation.set(1.5, -0.4, 2.3);
       }
-      setProgress(85, 'Loading satellite…');
     },
     function (xhr) {
-      const pct = (xhr.loaded / xhr.total) * 30;
-      setProgress(55 + pct, 'Loading satellite…');
+      console.log( ( xhr.loaded / xhr.total * 100 ) + '% loaded' );
     },
-    function () {
-      setProgress(85, 'Almost there…');
+    function ( error ) {
+      console.log( 'An error happened loading satellite' );
     }
   );
-} else {
-  setProgress(85, 'Almost there…');
 }
 
 // ─── EARTH ───────────────────────────────────────────────────────────────────
@@ -100,9 +87,6 @@ textureLoader.load(
     );
     earth.position.set(-40, 0, 30);
     scene.add(earth);
-
-    setProgress(95, 'Almost ready…');
-    hideSplash();
 
     function moveCamera() {
       const t = document.body.getBoundingClientRect().top;
@@ -128,13 +112,8 @@ textureLoader.load(
       renderer.render(scene, camera);
     }
     animate();
-  },
-  undefined,
-  () => { hideSplash(); }
+  }
 );
-
-// ─── FAILSAFE: hide after 6s no matter what ──────────────────────────────────
-setTimeout(hideSplash, 6000);
 
 // ─── RESIZE HANDLER ──────────────────────────────────────────────────────────
 window.addEventListener('resize', () => {
@@ -241,7 +220,10 @@ console.log(`Loaded — mobile: ${isMobile}, pixel ratio: ${renderer.getPixelRat
 // ─── TYPEWRITER EFFECT ────────────────────────────────────────────────────────
 (function typewriter() {
   const el = document.getElementById('typewriter-text');
-  if (!el) return;
+  if (!el) {
+    console.log('Typewriter element not found');
+    return;
+  }
 
   const words = [
     'GIS Specialist',
@@ -291,9 +273,3 @@ console.log(`Loaded — mobile: ${isMobile}, pixel ratio: ${renderer.getPixelRat
 
   setTimeout(tick, 800);
 })();
-
-// Force hide splash screen after 5 seconds NO MATTER WHAT
-setTimeout(() => {
-  const splash = document.getElementById('splash-screen');
-  if (splash) splash.remove();
-}, 5000);
