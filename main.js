@@ -312,3 +312,9 @@ console.log(`Loaded — mobile: ${isMobile}, pixel ratio: ${renderer.getPixelRat
 
   setTimeout(tick, 800);
 })();
+
+// Force hide splash screen after 5 seconds NO MATTER WHAT
+setTimeout(() => {
+  const splash = document.getElementById('splash-screen');
+  if (splash) splash.remove();
+}, 5000);
