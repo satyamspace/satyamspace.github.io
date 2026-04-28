@@ -1,5 +1,5 @@
-import * as THREE from 'https://cdn.jsdelivr.net/npm/three@0.129.0/build/three.module.js';
-import { GLTFLoader } from 'https://cdn.jsdelivr.net/npm/three@0.129.0/examples/jsm/loaders/GLTFLoader.js';
+import * as THREE from 'https://unpkg.com/three@0.129.0/build/three.module.js';
+import { GLTFLoader } from 'https://unpkg.com/three@0.129.0/examples/jsm/loaders/GLTFLoader.js';
 
 // ─── SPLASH SCREEN CONTROLLER ─────────────────────────────────────────────────
 const splash = document.getElementById('splash-screen');
