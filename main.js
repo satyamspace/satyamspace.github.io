@@ -1,28 +1,7 @@
 import * as THREE from 'https://cdn.skypack.dev/three@0.129.0/build/three.module.js';
 import { GLTFLoader } from 'https://cdn.skypack.dev/three@0.129.0/examples/jsm/loaders/GLTFLoader.js';
 
-// ─── SPLASH SCREEN CONTROLLER ─────────────────────────────────────────────────
-const splash = document.getElementById('splash-screen');
-const splashBar = document.getElementById('splash-bar');
-const splashLabel = document.getElementById('splash-label');
 
-let loadProgress = 0;
-
-function setProgress(pct, label) {
-  loadProgress = Math.max(loadProgress, pct);
-  if (splashBar) splashBar.style.width = loadProgress + '%';
-  if (splashLabel) splashLabel.textContent = label;
-}
-
-function hideSplash() {
-  setProgress(100, 'Ready');
-  setTimeout(() => {
-    if (splash) splash.classList.add('splash--hidden');
-    setTimeout(() => { if (splash) splash.remove(); }, 900);
-  }, 400);
-}
-
-setProgress(5, 'Initialising…');
 
 // ─── DEVICE DETECTION ────────────────────────────────────────────────────────
 const isMobile = window.innerWidth < 768;
