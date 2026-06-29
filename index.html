@@ -1,0 +1,2590 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta http-equiv="Permissions-Policy" content="interest-cohort=()">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+    
+    <title>Satyam</title>
+    
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="./style.css" >
+    <link rel="stylesheet" type="text/css" href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- <script type="module" src="https://unpkg.com/three@0.146.0/build/three.min.js"></script>
+    <script type="module" src="https://unpkg.com/three@0.146.0/examples/jsm/loaders/GLTFLoader.js"></script> -->
+    <script type="module" src="./main.js"></script>
+
+  </head>
+
+  <body>
+    <!-- ===== SPLASH SCREEN ===== -->
+    <div id="splash-screen">
+      <div class="splash__inner">
+        <div class="splash__orbit">
+          <div class="splash__satellite">
+            <div class="sat-panel"></div>
+            <div class="sat-body"></div>
+            <div class="sat-panel"></div>
+          </div>
+          <div class="splash__earth"></div>
+        </div>
+        <div class="splash__text">
+          <div class="splash__name">Satyam Shah</div>
+          <div class="splash__subtitle">GIS &middot; Earth Observation &middot; GeoAI</div>
+        </div>
+        <div class="splash__bar-wrap">
+          <div class="splash__bar-track">
+            <div class="splash__bar-fill" id="splash-bar"></div>
+          </div>
+          <div class="splash__bar-label" id="splash-label">Initialising&hellip;</div>
+        </div>
+      </div>
+    </div>
+    <!-- ===== END SPLASH SCREEN ===== -->
+
+    <canvas class="bg"></canvas>   
+
+    <header class="l-header">
+      <nav class="nav bd-grid">
+            
+            <div class="nav__logo">
+              <a href="#" class="nav__logo">
+                
+                <div class="name_logo">Satyam.</div>
+              </a>
+            </div>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <!-- <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li> -->
+                    <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+                    <!-- <li class="nav__item"><a href="#background" class="nav__link">Background</a></li> -->
+                  
+                    <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
+                    <li class="nav__item"><a href="#proj" class="nav__link">Projects</a></li>
+                    <li class="nav__item"><a href="#achieve" class="nav__link">Achievements</a></li>
+                    <li class="nav__item"><a href="#publications" class="nav__link">Publications</a></li>
+                    <li class="nav__item"><a href="#services" class="nav__link">Services</a></li>
+                    <!-- <li class="nav__item"><a href="#summerschool" class="nav__link" style="width: 120px;">Summer School</a></li> -->
+                </ul>
+            </div>
+          
+            <div class="nav__toggle" id="nav-toggle">
+                <i class='bx bx-menu'></i>
+            </div>
+          </nav>
+    </header>
+    <main>
+       <!-- ===== HOME =====  -->
+      <section class="home bd-grid" >  
+        <div class="home__container"> 
+          <h1 class="home__title">Hello,<br>I'm 
+            <span class="home__title-color">Satyam Shah </span>
+            <div class="home__typewriter"><span id="typewriter-text"></span><span class="typewriter__cursor">|</span></div>
+          </h1>
+          <h3 class="home__pos">Let's Connect </h3>
+          <div class="home__social">
+            <a target="_blank" rel="noopener noreferrer" class="button resume" href="./Docs/CV-Satyam-Shah.pdf" download="CV-Satyam-Shah.pdf">CV <i class='bx bx-download'></i></a>
+            <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/satyamshah/" class="home__social-icon left-icon"><i class='bx bxl-linkedin bx-tada-hover'></i></a>
+            <a target="_blank" rel="noopener noreferrer" href="https://github.com/satyamspace/satyamspace" class="home__social-icon"><i class='bx bxl-github bx-tada-hover'></i></a>
+            <a target="_blank" rel="noopener noreferrer" href="https://orcid.org/0009-0009-8451-2305" class="home__social-icon"><i class="fa-brands fa-orcid"></i></a>
+            <a target="_blank" rel="noopener noreferrer" href="https://scholar.google.com/citations?user=tnI4d-YAAAAJ&hl=en&authuser=2" class="home__social-icon"><i class="fa-brands fa-google-scholar"></i></a>
+            <a target="_blank" rel="noopener noreferrer" href="https://x.com/satyamshah_" class="home__social-icon"><i class='bx bxl-twitter bx-tada-hover'></i></a>
+            <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/satyamm01_/" class="home__social-icon"><i class='bx bxl-instagram bx-tada-hover'></i></a>
+            <a target="_blank" rel="noopener noreferrer" href="/cdn-cgi/l/email-protection#25055644515c4448564d444d111111654248444c490b464a48" class="home__social-icon right-icon"><i class='bx bx-envelope bx-tada-hover' ></i></a>
+            <!-- satyamshah444@gmail.com -->
+          </div>
+          <svg class="home__blob" viewBox="0 0 479 467" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <mask id="mask0" mask-type="alpha">
+                <path d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"/>
+            </mask>
+            <g mask="url(#mask0)">
+                <path d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"/>
+                <!-- <image class="home__blob-img" href="Memie4-removebg-preview.png"/> -->
+                <image class="home__blob-img" href="./images/profilephoto2.jpg" width="490px">
+            </g>
+          </svg>
+        </div> 
+      </section>
+
+      <!-- ===== ABOUT =====  -->
+      <section class="about section bd-grid" id="about">   
+        <!-- <h2 class="section-title">About Me</h2> -->
+        <div class="section_header">
+          <p class="about_head">About Me</p>
+        </div>
+
+        <div class="bg__container">
+          <div class="info-sectionbackgroundcu">
+            <div class="about_text">
+              I’m a GIS and remote sensing specialist with a Master’s degree, passionate about turning complex spatial data into actionable insights. My expertise spans satellite imagery, GeoAI, SAR, hyperspectral analysis, LiDAR, and advanced image interpretation, along with geosurveying and point cloud processing whether in the field or through digital analysis.
+
+I help startups, organizations, and research teams solve real-world challenges by delivering high-quality geospatial solutions, from environmental monitoring and sustainability projects to innovative applications in conservation and spatial analytics. I thrive at the intersection of research, applied problem-solving, and practical GIS solutions, always seeking to leverage emerging technologies to uncover hidden patterns and insights.
+
+
+              
+            </div>
+            <div class="about_img_container">
+              <img src="./images/spacepark.jpeg" class="background__imgabout1">
+              <img src="./images/ita3.JPEG" class="background__imgabout1">
+              <img src="./images/grad1.jpeg" class="background__imgabout1">
+              <img src="./images/totals1.JPEG" class="background__imgabout1">
+              <img src="./images/dweed2.jpeg" class="background__imgabout1">
+              <img src="./images/lidar3.JPEG" class="background__imgabout1">
+              
+            </div>  
+            <hr style="width: 80%;">
+            <h2 class="bg__title">Academic Background</h2>
+            <div class="timeline_container">
+              <ul class="timeline">
+                <li class="event" data-date="09/2024 – 01/2026 ">
+                  <div class="event_head">Master’s Degree <span class="grade__badge">🎓 Distinction</span></div>
+                  <img src="./images/leic1.jpg" class="background__imgcu">
+                  <p class="uni_title">University of Leicester</p>
+                  <p class="event_content">Master of Science, Geographical Information Science (GIS)</p>
+                </li>
+                <li class="event" data-date=" 06/2022 - 07/2022">
+                  <div class="event_head">Gatsby Plant Science Summer Program</div>
+                  <img src="./images/cam1.png" class="background__imgsz">
+                  <p class="uni_title">University of Cambridge</p>
+                </li>
+                <li class="event" data-date=" 09/2020 - 07/2024">
+                  <div class="event_head">Bachelor’s Degree</div>
+                  <img src="./images/leic1.jpg" class="background__imgpl">
+                  <p class="uni_title">University of Leicester</p>
+                  <p class="event_content">Bachelor of Science, Biological Sciences (Zoology) </p>
+                </li>
+              </ul>
+            </div>
+          <hr style="width: 80%;">
+          <h2 class="bg__title">Professional Background</h2>
+          <div class="timeline_container">
+              <ul class="timeline">
+                <li class="event" data-date="04/2025 – Current">
+                  <div class="event_head">Earth Observation Intern</div>
+                  <img src="./images/spacepark3.png" class="company__logo">
+                  <p class="event_content">Space Park Leicester (SPL), United Kingdom</p>
+                </li>
+                <li class="event" data-date="05/2025 – 07/2025">
+                  <div class="event_head">KTP Project Contributor</div>
+                  <img src="./images/blu.png" class="company__logo">
+                  <p class="event_content">Bluesky International Limited, United Kingdom</p>
+                </li>
+                <li class="event" data-date="03/2025 – Current">
+                  <div class="event_head">Remote Sensing Expert</div>
+                  <img src="./images/carbon.jpeg" class="company__logo">
+                  <p class="event_content">Carbon Keepers, United Kingdom</p>
+                </li>
+                <li class="event" data-date="07/2024 – 09/2024">
+                  <div class="event_head">Student Research Assistant</div>
+                  <img src="./images/forest.png" class="company__logo">
+                  <p class="event_content">National Forest, United Kingdom</p>
+                </li>
+                <li class="event" data-date="03/2024 – 06/2024">
+                  <div class="event_head">Biodiversity Consultant</div>
+                  <img src="./images/leic1.jpg" class="company__logo">
+                  <p class="event_content">University of Leicester, United Kingdom</p>
+                </li>
+                
+                  
+                  
+                
+              </ul>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+
+
+      <!-- ===== SKILLS =====  -->
+      <section class="skills section bd-grid" id="skills">
+        <div class="section_header">
+          <p class="skills_head">Skills</p>
+        </div>
+        <div class="skills__container container bd-grid">
+          <!-- <div class="skills__content grid" data-content id="skills"> -->
+            <div class="skills__content">
+<div class="skills__area">
+  
+  <!-- GIS & Remote Sensing Category -->
+  <div class="skills__category">
+    <h3>GIS & Remote Sensing</h3>
+  </div>
+  
+  <div class="skills__group">
+    <div class="skills__data">
+      <div class="skills_img_container">
+        <img src="./images/earth-engine-logo.png" class="skills__img">
+      </div>
+      <div class="skills_name_container">
+        <h3 class="skills__name">Google Earth Engine</h3>
+      </div>
+    </div>
+  </div>
+
+  <div class="skills__group">
+    <div class="skills__data">
+      <div class="skills_img_container">
+        <img src="./images/arcgis-pro.jpeg" class="skills__img">
+      </div>
+      <div class="skills_name_container">
+        <h3 class="skills__name">ArcGIS Pro</h3>
+      </div>
+    </div>
+  </div>
+
+  <div class="skills__group">
+    <div class="skills__data">
+      <div class="skills_img_container">
+        <img src="./images/arcgis-online-banner-icon_0.png" class="skills__img">
+      </div>
+      <div class="skills_name_container">
+        <h3 class="skills__name">ArcGIS Online</h3>
+      </div>
+    </div>
+  </div>
+
+  <div class="skills__group">
+    <div class="skills__data">
+      <div class="skills_img_container">
+        <img src="./images/logoQgis.png" class="skills__img">
+      </div>
+      <div class="skills_name_container">
+        <h3 class="skills__name">QGIS</h3>
+      </div>
+    </div>
+  </div>
+
+  <div class="skills__group">
+    <div class="skills__data">
+      <div class="skills_img_container">
+        <img src="./images/ecognition.png" class="skills__img">
+      </div>
+      <div class="skills_name_container">
+        <h3 class="skills__name">eCognition</h3>
+      </div>
+    </div>
+  </div>
+
+  <div class="skills__group">
+    <div class="skills__data">
+      <div class="skills_img_container">
+        <img src="./images/Untitled (Logo) (20).png" class="skills__img">
+      </div>
+      <div class="skills_name_container">
+        <h3 class="skills__name">Remote Sensing</h3>
+      </div>
+    </div>
+  </div>
+
+  <div class="skills__group">
+    <div class="skills__data">
+      <div class="skills_img_container">
+        <img src="./images/Untitled (Logo) (19).png" class="skills__img">
+      </div>
+      <div class="skills_name_container">
+        <h3 class="skills__name">Web Cartography</h3>
+      </div>
+    </div>
+  </div>
+
+  <div class="skills__group">
+  <div class="skills__data">
+    <div class="skills_img_container">
+      <img src="./images/erdasimagine1.png" class="skills__img">
+    </div>
+    <div class="skills_name_container">
+      <h3 class="skills__name">ERDAS IMAGINE</h3>
+    </div>
+  </div>
+</div>
+
+<div class="skills__group">
+  <div class="skills__data">
+    <div class="skills_img_container">
+      <img src="./images/enviii1.webp" class="skills__img">
+    </div>
+    <div class="skills_name_container">
+      <h3 class="skills__name">ENVI</h3>
+    </div>
+  </div>
+</div>
+
+<div class="skills__group">
+  <div class="skills__data">
+    <div class="skills_img_container">
+      <img src="https://leafletjs.com/docs/images/logo.png" class="skills__img">
+    </div>
+    <div class="skills_name_container">
+      <h3 class="skills__name">Leaflet</h3>
+    </div>
+  </div>
+</div>
+
+<div class="skills__group">
+  <div class="skills__data">
+    <div class="skills_img_container">
+      <img src="https://cdn.worldvectorlogo.com/logos/mapbox-2.svg" class="skills__img">
+    </div>
+    <div class="skills_name_container">
+      <h3 class="skills__name">Mapbox</h3>
+    </div>
+  </div>
+</div>
+
+<div class="skills__group">
+  <div class="skills__data">
+    <div class="skills_img_container">
+      <img src="https://raw.githubusercontent.com/python-visualization/folium/main/docs/_static/folium_logo.png" class="skills__img">
+    </div>
+    <div class="skills_name_container">
+      <h3 class="skills__name">Folium</h3>
+    </div>
+  </div>
+</div>
+
+  <!-- Programming & Scripting Category -->
+  <div class="skills__category">
+    <h3>Programming & Scripting</h3>
+  </div>
+
+  <div class="skills__group">
+    <div class="skills__data">
+      <div class="skills_img_container">
+        <img src="./images/Python-logo-notext.svg.png" class="skills__img">
+      </div>
+      <div class="skills_name_container">
+        <h3 class="skills__name">Python</h3>
+      </div>
+    </div>
+  </div>
+
+  <div class="skills__group">
+    <div class="skills__data">
+      <div class="skills_img_container">
+        <img src="./images/front_end_icon.png" class="skills__img">
+      </div>
+      <div class="skills_name_container">
+        <h3 class="skills__name">JavaScript</h3>
+      </div>
+    </div>
+  </div>
+
+  <div class="skills__group">
+  <div class="skills__data">
+    <div class="skills_img_container">
+      <img src="https://www.r-project.org/logo/Rlogo.png" class="skills__img">
+    </div>
+    <div class="skills_name_container">
+      <h3 class="skills__name">R</h3>
+    </div>
+  </div>
+</div>
+
+<div class="skills__group">
+  <div class="skills__data">
+    <div class="skills_img_container">
+      <img src="https://nodejs.org/static/images/logo.svg" class="skills__img">
+    </div>
+    <div class="skills_name_container">
+      <h3 class="skills__name">Node.js</h3>
+    </div>
+  </div>
+</div>
+
+<div class="skills__group">
+  <div class="skills__data">
+    <div class="skills_img_container">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/9/92/LaTeX_logo.svg" class="skills__img">
+    </div>
+    <div class="skills_name_container">
+      <h3 class="skills__name">LaTeX</h3>
+    </div>
+  </div>
+</div>
+
+  <!-- Geomatics Surveying Category -->
+<div class="skills__category">
+  <h3>Geomatics & Surveying</h3>
+</div>
+
+<!-- Field Equipment & Methods -->
+<div class="skills__group">
+  <div class="skills__data">
+    <div class="skills_img_container">
+      <img src="./images/totalstation.jpeg" class="skills__img">
+    </div>
+    <div class="skills_name_container">
+      <h3 class="skills__name">Total Station</h3>
+    </div>
+  </div>
+</div>
+
+<div class="skills__group">
+  <div class="skills__data">
+    <div class="skills_img_container">
+      <img src="./images/gnss.jpg" class="skills__img">
+    </div>
+    <div class="skills_name_container">
+      <h3 class="skills__name">GNSS/GPS</h3>
+    </div>
+  </div>
+</div>
+
+<div class="skills__group">
+  <div class="skills__data">
+    <div class="skills_img_container">
+      <img src="./images/drone.png" class="skills__img">
+    </div>
+    <div class="skills_name_container">
+      <h3 class="skills__name">UAV/Drone</h3>
+    </div>
+  </div>
+</div>
+
+<div class="skills__group">
+  <div class="skills__data">
+    <div class="skills_img_container">
+      <img src="./images/tls.jpg" class="skills__img">
+    </div>
+    <div class="skills_name_container">
+      <h3 class="skills__name">LiDAR/TLS</h3>
+    </div>
+  </div>
+</div>
+
+<div class="skills__group">
+  <div class="skills__data">
+    <div class="skills_img_container">
+      <img src="./images/sfm .jpeg" class="skills__img">
+    </div>
+    <div class="skills_name_container">
+      <h3 class="skills__name">SfM Photogrammetry</h3>
+    </div>
+  </div>
+</div>
+
+<!-- Processing Software -->
+<div class="skills__group">
+  <div class="skills__data">
+    <div class="skills_img_container">
+      <img src="./images/pix4d.jpeg" class="skills__img">
+    </div>
+    <div class="skills_name_container">
+      <h3 class="skills__name">Pix4D</h3>
+    </div>
+  </div>
+</div>
+
+<div class="skills__group">
+  <div class="skills__data">
+    <div class="skills_img_container">
+      <img src="./images/cloudcompare.jpeg" class="skills__img">
+    </div>
+    <div class="skills_name_container">
+      <h3 class="skills__name">CloudCompare</h3>
+    </div>
+  </div>
+</div>
+
+<div class="skills__group">
+  <div class="skills__data">
+    <div class="skills_img_container">
+      <img src="./images/odm.png" class="skills__img">
+    </div>
+    <div class="skills_name_container">
+      <h3 class="skills__name">OpenDroneMap</h3>
+    </div>
+  </div>
+</div>
+
+<div class="skills__group">
+  <div class="skills__data">
+    <div class="skills_img_container">
+      <img src="./images/metashape.jpeg" class="skills__img">
+    </div>
+    <div class="skills_name_container">
+      <h3 class="skills__name">Agisoft Metashape</h3>
+    </div>
+  </div>
+</div>
+
+<div class="skills__group">
+  <div class="skills__data">
+    <div class="skills_img_container">
+      <img src="./images/3d.jpeg" class="skills__img">
+    </div>
+    <div class="skills_name_container">
+      <h3 class="skills__name">3D Reconstruction</h3>
+    </div>
+  </div>
+</div>
+
+<div class="skills__group">
+  <div class="skills__data">
+    <div class="skills_img_container">
+      <img src="./images/surfer.jpeg" class="skills__img">
+    </div>
+    <div class="skills_name_container">
+      <h3 class="skills__name">Surfer</h3>
+    </div>
+  </div>
+</div>
+
+<div class="skills__group">
+  <div class="skills__data">
+    <div class="skills_img_container">
+      <img src="./images/meshlab.png" class="skills__img">
+    </div>
+    <div class="skills_name_container">
+      <h3 class="skills__name">MeshLab</h3>
+    </div>
+  </div>
+</div>
+
+  <!-- Data Visualization & Analysis Category -->
+  <div class="skills__category">
+    <h3>Data Visualization & Analysis</h3>
+  </div>
+
+  <div class="skills__group">
+    <div class="skills__data">
+      <div class="skills_img_container">
+        <img src="./images/Microsoft-Power-BI-Symbol.png" class="skills__img">
+      </div>
+      <div class="skills_name_container">
+        <h3 class="skills__name">Power BI</h3>
+      </div>
+    </div>
+  </div>
+
+  <div class="skills__group">
+    <div class="skills__data">
+      <div class="skills_img_container">
+        <img src="./images/Untitled (Logo) (21).png" class="skills__img">
+      </div>
+      <div class="skills_name_container">
+        <h3 class="skills__name">Streamlit</h3>
+      </div>
+    </div>
+  </div>
+
+  <div class="skills__group">
+  <div class="skills__data">
+    <div class="skills_img_container">
+      <img src="https://logos-world.net/wp-content/uploads/2021/10/Tableau-Logo.png" class="skills__img">
+    </div>
+    <div class="skills_name_container">
+      <h3 class="skills__name">Tableau</h3>
+    </div>
+  </div>
+</div>
+
+<div class="skills__group">
+  <div class="skills__data">
+    <div class="skills_img_container">
+      <img src="https://matplotlib.org/_static/logo2_compressed.svg" class="skills__img">
+    </div>
+    <div class="skills_name_container">
+      <h3 class="skills__name">Matplotlib</h3>
+    </div>
+  </div>
+</div>
+
+<div class="skills__group">
+  <div class="skills__data">
+    <div class="skills_img_container">
+      <img src="https://images.plot.ly/logo/new-branding/plotly-logomark.png" class="skills__img">
+    </div>
+    <div class="skills_name_container">
+      <h3 class="skills__name">Plotly</h3>
+    </div>
+  </div>
+</div>
+
+<div class="skills__group">
+  <div class="skills__data">
+    <div class="skills_img_container">
+      <img src="./images/pandas111.png" class="skills__img">
+    </div>
+    <div class="skills_name_container">
+      <h3 class="skills__name">Pandas</h3>
+    </div>
+  </div>
+</div>
+
+<div class="skills__group">
+  <div class="skills__data">
+    <div class="skills_img_container">
+      <img src="https://numpy.org/images/logo.svg" class="skills__img">
+    </div>
+    <div class="skills_name_container">
+      <h3 class="skills__name">NumPy</h3>
+    </div>
+  </div>
+</div>
+
+<div class="skills__group">
+  <div class="skills__data">
+    <div class="skills_img_container">
+      <img src="https://scipy.org/images/logo.svg" class="skills__img">
+    </div>
+    <div class="skills_name_container">
+      <h3 class="skills__name">SciPy</h3>
+    </div>
+  </div>
+</div>
+
+  <!-- Machine Learning & AI Category -->
+  <div class="skills__category">
+    <h3>Machine Learning & AI</h3>
+  </div>
+
+  <div class="skills__group">
+    <div class="skills__data">
+      <div class="skills_img_container">
+        <img src="./images/artificial-intelligence.png" class="skills__img">
+      </div>
+      <div class="skills_name_container">
+        <h3 class="skills__name">ML/AI</h3>
+      </div>
+    </div>
+  </div>
+
+  <div class="skills__group">
+    <div class="skills__data">
+      <div class="skills_img_container">
+        <img src="./images/text.png" class="skills__img">
+      </div>
+      <div class="skills_name_container">
+        <h3 class="skills__name">Prompt Engineer</h3>
+      </div>
+    </div>
+  </div>
+
+  <div class="skills__group">
+  <div class="skills__data">
+    <div class="skills_img_container">
+      <img src="https://www.tensorflow.org/images/tf_logo_social.png" class="skills__img">
+    </div>
+    <div class="skills_name_container">
+      <h3 class="skills__name">TensorFlow</h3>
+    </div>
+  </div>
+</div>
+
+<div class="skills__group">
+  <div class="skills__data">
+    <div class="skills_img_container">
+      <img src="https://pytorch.org/assets/images/pytorch-logo.png" class="skills__img">
+    </div>
+    <div class="skills_name_container">
+      <h3 class="skills__name">PyTorch</h3>
+    </div>
+  </div>
+</div>
+
+<div class="skills__group">
+  <div class="skills__data">
+    <div class="skills_img_container">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/a/ae/Keras_logo.svg" class="skills__img">
+    </div>
+    <div class="skills_name_container">
+      <h3 class="skills__name">Keras</h3>
+    </div>
+  </div>
+</div>
+
+<div class="skills__group">
+  <div class="skills__data">
+    <div class="skills_img_container">
+      <img src="https://scikit-learn.org/stable/_static/scikit-learn-logo-small.png" class="skills__img">
+    </div>
+    <div class="skills_name_container">
+      <h3 class="skills__name">scikit-learn</h3>
+    </div>
+  </div>
+</div>
+
+  <!-- Databases Category -->
+  <div class="skills__category">
+    <h3>Databases</h3>
+  </div>
+
+  <div class="skills__group">
+    <div class="skills__data">
+      <div class="skills_img_container">
+        <img src="./images/pg.png" class="skills__img">
+      </div>
+      <div class="skills_name_container">
+        <h3 class="skills__name">PostgreSQL</h3>
+      </div>
+    </div>
+  </div>
+
+  <div class="skills__group">
+  <div class="skills__data">
+    <div class="skills_img_container">
+      <img src="https://www.mysql.com/common/logos/logo-mysql-170x115.png" class="skills__img">
+    </div>
+    <div class="skills_name_container">
+      <h3 class="skills__name">MySQL</h3>
+    </div>
+  </div>
+</div>
+
+<div class="skills__group">
+  <div class="skills__data">
+    <div class="skills_img_container">
+      <img src="https://www.mongodb.com/assets/images/global/favicon.ico" class="skills__img">
+    </div>
+    <div class="skills_name_container">
+      <h3 class="skills__name">MongoDB</h3>
+    </div>
+  </div>
+</div>
+
+<div class="skills__group">
+  <div class="skills__data">
+    <div class="skills_img_container">
+      <img src="https://duckdb.org/images/logo-dl/DuckDB_Logo.png" class="skills__img">
+    </div>
+    <div class="skills_name_container">
+      <h3 class="skills__name">DuckDB</h3>
+    </div>
+  </div>
+</div>
+
+<!-- Cloud Platforms Category -->
+<div class="skills__category">
+  <h3>Cloud Platforms</h3>
+</div>
+
+<div class="skills__group">
+  <div class="skills__data">
+    <div class="skills_img_container">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/9/93/Amazon_Web_Services_Logo.svg" class="skills__img">
+    </div>
+    <div class="skills_name_container">
+      <h3 class="skills__name">AWS</h3>
+    </div>
+  </div>
+</div>
+
+<div class="skills__group">
+  <div class="skills__data">
+    <div class="skills_img_container">
+      <img src="https://www.svgrepo.com/show/353805/google-cloud.svg" class="skills__img">
+    </div>
+    <div class="skills_name_container">
+      <h3 class="skills__name">Google Cloud</h3>
+    </div>
+  </div>
+</div>
+
+<div class="skills__group">
+  <div class="skills__data">
+    <div class="skills_img_container">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/a/a8/Microsoft_Azure_Logo.svg" class="skills__img">
+    </div>
+    <div class="skills_name_container">
+      <h3 class="skills__name">Azure</h3>
+    </div>
+  </div>
+</div>
+
+</div>
+
+      <!-- ===== PROJECTS DEMO =====  -->
+<section class="proj section bd-grid" id="proj">
+  <div class="section_header">
+    <p class="project_head">Projects</p>
+  </div>
+  
+  <div class="projs__container">
+    
+    <!-- Remote Sensing & Computer Vision Category -->
+    <div class="project__subcategory">
+      <h3>Remote Sensing & Computer Vision</h3>
+    </div>
+    
+    <!-- Demo card 1 -->
+    <a href="https://satyamspace.github.io/Projects/Remote%20Sensing%20%26%20Computer%20Vision/remotesensing1.pdf" target="_blank" class="card">
+      <div class="card__img-container">
+        <img class="card__img" src="./images/remo1.jpg" alt="unsplash random image" />
+        <div class="card__tags">
+          <span class="card__tag">Erdas Imagine</span>
+          <span class="card__tag">ArcGIS Pro</span>
+        </div>
+      </div>
+      <div class="card__body">
+        <h3 class="card__title">LULC Temporal Dynamics of Kathmandu City</h3>
+        <h5 class="card__title">Remote Sensing</h5>
+        <p class="card__detail">
+          This model aims to analyze the correlation between vegetation and bare soil areas and also cloud percentage during 1st January 2018 – 1st January 2019.
+        </p>
+        <p class="card__cta">Read more</p>
+      </div>
+    </a>
+
+    <!-- Demo card 2 -->
+    <a href="https://satyamspace.github.io/Projects/Remote%20Sensing%20%26%20Computer%20Vision/Flood detection with Sentinel-1.html" target="_blank" class="card">
+      <div class="card__img-container">
+        <img class="card__img" src="./images/Flooddetection.png" alt="unsplash random image" />
+        <div class="card__tags">
+          <span class="card__tag">Python</span>
+          
+        </div>
+      </div>
+      <div class="card__body">
+        <h3 class="card__title">Flood Detection with Sentinel-1</h3>
+        <h5 class="card__title">Adv. Remote Sensing</h5>
+        <p class="card__detail">
+          The project shows the implementation of Sentinel-1 data for flood detection.
+        </p>
+        <p class="card__cta">Read more</p>
+      </div>
+    </a>
+
+    <a href="https://satyamspace.github.io/Projects/Remote%20Sensing%20%26%20Computer%20Vision/Watershed-based tree segmentation.html" target="_blank" class="card">
+      <div class="card__img-container">
+        <img class="card__img" src="./images/Waterbasedseg.png" alt="unsplash random image" />
+        <div class="card__tags">
+          <span class="card__tag">Python</span>
+          
+        </div>
+      </div>
+      <div class="card__body">
+        <h3 class="card__title">Watershed-Based Tree Segmentation</h3>
+        <h5 class="card__title">Adv. Remote Sensing</h5>
+        <p class="card__detail">
+          This project  involves analyzing intensity features of the image to identify regions of interest and separating them into different regions.
+        </p>
+        <p class="card__cta">Read more</p>
+      </div>
+    </a>
+
+    <a href="https://satyamspace.github.io/Projects/Remote%20Sensing%20%26%20Computer%20Vision/Detection of crop lines with Hough Line Transform.html" target="_blank" class="card">
+      <div class="card__img-container">
+        <img class="card__img" src="./images/Croplines.png" alt="unsplash random image" />
+        <div class="card__tags">
+          <span class="card__tag">Python</span>
+          
+        </div>
+      </div>
+      <div class="card__body">
+        <h3 class="card__title">Detection of Crop Lines with Hough Line Transform</h3>
+        <h5 class="card__title">Adv. Remote Sensing</h5>
+        <p class="card__detail">
+          This project showcases the use of Hough Line Transform algorithm to detect crop lines.
+        </p>
+        <p class="card__cta">Read more</p>
+      </div>
+    </a>
+
+    <a href="https://satyamspace.github.io/Projects/Remote%20Sensing%20%26%20Computer%20Vision/Using the Segment Anything Model and GEOBIA to classify vineyard area.html" target="_blank" class="card">
+      <div class="card__img-container">
+        <img class="card__img" src="./images/SAMvineyard.png" alt="unsplash random image" />
+        <div class="card__tags">
+          <span class="card__tag">Python</span>
+          
+        </div>
+      </div>
+      <div class="card__body">
+        <h3 class="card__title">Using SAM and GEOBIA to Classify Vineyard</h3>
+        <h5 class="card__title">Adv. Remote Sensing</h5>
+        <p class="card__detail">
+          This project makes use of the Segment Anything Model (SAM) and GEOBIA for vineyard classification.
+        </p>
+        <p class="card__cta">Read more</p>
+      </div>
+    </a>
+
+    <a href="https://satyamspace.github.io/Projects/Remote%20Sensing%20%26%20Computer%20Vision/Using Computer Vision Algorithms for Plant Detection and Counting.html" target="_blank" class="card">
+      <div class="card__img-container">
+        <img class="card__img" src="./images/CVforplantdetectionandcounting.png" alt="unsplash random image" />
+        <div class="card__tags">
+          <span class="card__tag">Python</span>
+          
+        </div>
+      </div>
+      <div class="card__body">
+        <h3 class="card__title">Using Computer Vision Algorithms for Plant Detection and Counting</h3>
+        <h5 class="card__title">Adv. Remote Sensing</h5>
+        <p class="card__detail">
+          This project integrates CV algorithms for efficient detection and quantitative analysis of plant populations
+        </p>
+        <p class="card__cta">Read more</p>
+      </div>
+    </a>
+
+    <a href="https://satyamspace.github.io/Projects/Remote%20Sensing%20%26%20Computer%20Vision/Object Detection .html" target="_blank" class="card">
+      <div class="card__img-container">
+        <img class="card__img" src="./images/Cardetection.png" alt="unsplash random image" />
+        <div class="card__tags">
+          <span class="card__tag">Python</span>
+          <span class="card__tag">DL</span>
+          
+        </div>
+      </div>
+      <div class="card__body">
+        <h3 class="card__title">Template Matching on OpenCV to Detect Cars</h3>
+        <h5 class="card__title">Adv. Remote Sensing</h5>
+        <p class="card__detail">
+          This project applies object detection CV algorithm to detect cars.
+        </p>
+        <p class="card__cta">Read more</p>
+      </div>
+    </a>
+
+    <a href="https://satyamspace.github.io/Projects/Remote%20Sensing%20%26%20Computer%20Vision/Supervised Techniques.html" target="_blank" class="card">
+      <div class="card__img-container">
+        <img class="card__img" src="./images/supervisedtechnqiues.png" alt="unsplash random image" />
+        <div class="card__tags">
+          <span class="card__tag">Python</span>
+          <span class="card__tag">ML</span>
+          
+          
+        </div>
+      </div>
+      <div class="card__body">
+        <h3 class="card__title">LULC of Netherlands using ML</h3>
+        <h5 class="card__title">Adv. Remote Sensing</h5>
+        <p class="card__detail">
+          This project applies HOG and SVM techniques integrated with OBIA for LULC classification.
+        </p>
+        <p class="card__cta">Read more</p>
+      </div>
+    </a>
+
+    <a href="https://satyamspace.github.io/Projects/Remote%20Sensing%20%26%20Computer%20Vision/Upsupervised Techniques and PCA on satellite images.html" target="_blank" class="card">
+      <div class="card__img-container">
+        <img class="card__img" src="./images/PCA.png" alt="unsplash random image" />
+        <div class="card__tags">
+          <span class="card__tag">Python</span>
+          <span class="card__tag">ML</span>
+          
+          
+        </div>
+      </div>
+      <div class="card__body">
+        <h3 class="card__title">PCA-Based Unsupervised Change Detection</h3>
+        <h5 class="card__title">Adv. Remote Sensing</h5>
+        <p class="card__detail">
+          This project applies PCA-based unsupervised classification to distinguish spectral patterns and reduce data dimensionality.
+        </p>
+        <p class="card__cta">Read more</p>
+      </div>
+    </a>
+
+    <a href="https://satyamspace.github.io/Projects/Remote%20Sensing%20%26%20Computer%20Vision/Texture Analysis.html" target="_blank" class="card">
+      <div class="card__img-container">
+        <img class="card__img" src="./images/texture.png" alt="unsplash random image" />
+        <div class="card__tags">
+          <span class="card__tag">Python</span>
+          <span class="card__tag">ML</span>
+          
+          
+        </div>
+      </div>
+      <div class="card__body">
+        <h3 class="card__title">Texture Analysing using GLCM</h3>
+        <h5 class="card__title">Adv. Remote Sensing</h5>
+        <p class="card__detail">
+          This project performs texture analysis using the (GLCM) to extract spatial pattern features from imagery.
+        </p>
+        <p class="card__cta">Read more</p>
+      </div>
+    </a>
+
+    <a href="https://satyamspace.github.io/Projects/Remote%20Sensing%20%26%20Computer%20Vision/Edge Detection 08.html" target="_blank" class="card">
+      <div class="card__img-container">
+        <img class="card__img" src="./images/edge.png" alt="unsplash random image" />
+        <div class="card__tags">
+          <span class="card__tag">Python</span>
+          <span class="card__tag">ML</span>
+          
+          
+        </div>
+      </div>
+      <div class="card__body">
+        <h3 class="card__title">Edge Detection using HLT</h3>
+        <h5 class="card__title">Adv. Remote Sensing</h5>
+        <p class="card__detail">
+          This project applies HCD and the Probabilistic Hough Line Transform to extract key features and linear structures for precise feature identification.
+        </p>
+        <p class="card__cta">Read more</p>
+      </div>
+    </a>
+
+    <a href="https://satyamspace.github.io/Projects/Remote%20Sensing%20%26%20Computer%20Vision/Tree Detection with YOLOv12.html" target="_blank" class="card">
+      <div class="card__img-container">
+        <img class="card__img" src="./images/treedetectionYOLO.png" alt="unsplash random image" />
+        <div class="card__tags">
+          <span class="card__tag">Python</span>
+          <span class="card__tag">YOLO</span>
+          
+          
+        </div>
+      </div>
+      <div class="card__body">
+        <h3 class="card__title">Tree Detection with YOLOv12</h3>
+        <h5 class="card__title">Adv. Remote Sensing</h5>
+        <p class="card__detail">
+          This project uses YOLOv12 for tree detection showcasing a DL approach for accurate identification of individual trees.
+        </p>
+        <p class="card__cta">Read more</p>
+      </div>
+    </a>
+
+    <a href="https://satyamspace.github.io/Projects/Remote%20Sensing%20%26%20Computer%20Vision/AlphaEarth Solutions Demo.html" target="_blank" class="card">
+      <div class="card__img-container">
+        <img class="card__img" src="./images/Alpha.png" alt="unsplash random image" />
+        <div class="card__tags">
+          <span class="card__tag">Python</span>
+          <span class="card__tag">ML</span>
+          
+          
+        </div>
+      </div>
+      <div class="card__body">
+        <h3 class="card__title">Using Alpha Earth Embeddings for Clustering</h3>
+        <h5 class="card__title">Adv. Remote Sensing</h5>
+        <p class="card__detail">
+          This project leverages AlphaEarth embeddings to perform spatial clustering.
+        </p>
+        <p class="card__cta">Read more</p>
+      </div>
+    </a>
+
+    <a href="https://satyamspace.github.io/Projects/Remote%20Sensing%20%26%20Computer%20Vision/LULC Classification.html" target="_blank" class="card">
+      <div class="card__img-container">
+        <img class="card__img" src="./images/LULC.png" alt="unsplash random image" />
+        <div class="card__tags">
+          <span class="card__tag">Python</span>
+          <span class="card__tag">ML</span>
+          
+          
+        </div>
+      </div>
+      <div class="card__body">
+        <h3 class="card__title">LULC Pixel Classification</h3>
+        <h5 class="card__title">Adv. Remote Sensing</h5>
+        <p class="card__detail">
+          This project performs LULC pixel-level classification using Google Alpha embeddings.
+        </p>
+        <p class="card__cta">Read more</p>
+      </div>
+    </a>
+
+    <a href="https://satyamspace.github.io/Projects/Remote%20Sensing%20%26%20Computer%20Vision/Semantic segmentation for Usage and Coverage mapping with Pytorch and TorchGeo.html" target="_blank" class="card">
+      <div class="card__img-container">
+        <img class="card__img" src="./images/semanticseg.png" alt="unsplash random image" />
+        <div class="card__tags">
+          <span class="card__tag">Python</span>
+          <span class="card__tag">DL</span>
+          
+          
+        </div>
+      </div>
+      <div class="card__body">
+        <h3 class="card__title">Semantic Segmentation for Coverage Mapping</h3>
+        <h5 class="card__title">Adv. Remote Sensing</h5>
+        <p class="card__detail">
+          This project implements semantic segmentation using PyTorch & TorchGeo to generate detailed land usage and coverage maps.
+        </p>
+        <p class="card__cta">Read more</p>
+      </div>
+    </a>
+
+    <a href="https://satyamspace.github.io/Projects/Remote%20Sensing%20%26%20Computer%20Vision/Semantic Image Segmentation - Part 1.html" target="_blank" class="card">
+      <div class="card__img-container">
+        <img class="card__img" src="./images/semanticimagesegpart1.png" alt="unsplash random image" />
+        <div class="card__tags">
+          <span class="card__tag">Python</span>
+          <span class="card__tag">DL</span>
+          
+          
+        </div>
+      </div>
+      <div class="card__body">
+        <h3 class="card__title">Semantic Segmentation using CNN</h3>
+        <h5 class="card__title">Adv. Remote Sensing</h5>
+        <p class="card__detail">
+          This project applies a CNN for semantic segmentation to perform pixel-level mapping.
+        </p>
+        <p class="card__cta">Read more</p>
+      </div>
+    </a>
+
+    <a href="https://satyamspace.github.io/Projects/Remote%20Sensing%20%26%20Computer%20Vision/U-Net for Semantic Segmentation and LULC Mapping.html" target="_blank" class="card">
+      <div class="card__img-container">
+        <img class="card__img" src="./images/U-Netseg.png" alt="unsplash random image" />
+        <div class="card__tags">
+          <span class="card__tag">Python</span>
+          <span class="card__tag">DL</span>
+          
+          
+        </div>
+      </div>
+      <div class="card__body">
+        <h3 class="card__title">U-Net for Semantic Segmentation & LULC Mapping</h3>
+        <h5 class="card__title">Adv. Remote Sensing</h5>
+        <p class="card__detail">
+          This project applies a U-Net architecture for semantic segmentation to perform pixel-level LULC mapping.
+        </p>
+        <p class="card__cta">Read more</p>
+      </div>
+    </a>
+
+    <a href="https://satyamspace.github.io/Projects/Remote%20Sensing%20%26%20Computer%20Vision/Training models for solar panel segmentation.html" target="_blank" class="card">
+      <div class="card__img-container">
+        <img class="card__img" src="./images/solarpanel.png" alt="unsplash random image" />
+        <div class="card__tags">
+          <span class="card__tag">Python</span>
+          <span class="card__tag">DL</span>
+          
+          
+        </div>
+      </div>
+      <div class="card__body">
+        <h3 class="card__title">Training Model for Solar Panel Detection</h3>
+        <h5 class="card__title">Adv. Remote Sensing</h5>
+        <p class="card__detail">
+          This project focuses on training DL model for solar panel segmentation and  delineation of solar panels.
+        </p>
+        <p class="card__cta">Read more</p>
+      </div>
+    </a>
+
+    <a href="https://satyamspace.github.io/Projects/Remote%20Sensing%20%26%20Computer%20Vision/Training models for building segmentation.html" target="_blank" class="card">
+      <div class="card__img-container">
+        <img class="card__img" src="./images/buildingseg.png" alt="unsplash random image" />
+        <div class="card__tags">
+          <span class="card__tag">Python</span>
+          <span class="card__tag">DL</span>
+          
+          
+        </div>
+      </div>
+      <div class="card__body">
+        <h3 class="card__title">Training Model for Building Segmentation </h3>
+        <h5 class="card__title">Adv. Remote Sensing</h5>
+        <p class="card__detail">
+          This project focuses on training DL model for building footprints segmentation.
+        </p>
+        <p class="card__cta">Read more</p>
+      </div>
+    </a>
+
+    <a href="https://satyamspace.github.io/Projects/Remote%20Sensing%20%26%20Computer%20Vision/Image Segmentation and Orange Tree Detection.html" target="_blank" class="card">
+      <div class="card__img-container">
+        <img class="card__img" src="./images/imagesegandorangetree.jpeg" alt="unsplash random image" />
+        <div class="card__tags">
+          <span class="card__tag">Python</span>
+          <span class="card__tag">DL</span>
+          
+          
+        </div>
+      </div>
+      <div class="card__body">
+        <h3 class="card__title">DL-Based Orange Tree Detection</h3>
+        <h5 class="card__title">Adv. Remote Sensing</h5>
+        <p class="card__detail">
+          This project performs instance segmentation of orange trees and cars in aerial imagery using YOLOv8 with OBB.
+        </p>
+        <p class="card__cta">Read more</p>
+      </div>
+    </a>
+
+    <a href="https://satyamspace.github.io/Projects/Remote%20Sensing%20%26%20Computer%20Vision/Using YOLO to detect vegetables.html" target="_blank" class="card">
+      <div class="card__img-container">
+        <img class="card__img" src="./images/YOLOvegetables.png" alt="unsplash random image" />
+        <div class="card__tags">
+          <span class="card__tag">Python</span>
+          <span class="card__tag">DL</span>
+          
+          
+        </div>
+      </div>
+      <div class="card__body">
+        <h3 class="card__title">Using YOLO to Detect Vegetables</h3>
+        <h5 class="card__title">Adv. Remote Sensing</h5>
+        <p class="card__detail">
+          This project implements a YOLO-based object detection pipeline to identify and count individual vegetable plants in high-resolution field imagery.
+        </p>
+        <p class="card__cta">Read more</p>
+      </div>
+    </a>
+
+    <a href="https://satyamspace.github.io/Projects/Remote%20Sensing%20%26%20Computer%20Vision/Objection Detection using YOLO.html" target="_blank" class="card">
+      <div class="card__img-container">
+        <img class="card__img" src="./images/ObjecYOLO.jpeg" alt="unsplash random image" />
+        <div class="card__tags">
+          <span class="card__tag">Python</span>
+          <span class="card__tag">DL</span>
+          
+          
+        </div>
+      </div>
+      <div class="card__body">
+        <h3 class="card__title">Using YOLO to Detect Trees</h3>
+        <h5 class="card__title">Adv. Remote Sensing</h5>
+        <p class="card__detail">
+          This project makes use of YOLO algorithms to detect various objects.
+        </p>
+        <p class="card__cta">Read more</p>
+      </div>
+    </a>
+
+    <a href="https://satyamspace.github.io/Projects/Remote%20Sensing%20%26%20Computer%20Vision/Orange Tree Detection with YOLO v5.html" target="_blank" class="card">
+      <div class="card__img-container">
+        <img class="card__img" src="./images/OrangeTreeDetectionYOLO5.jpeg" alt="unsplash random image" />
+        <div class="card__tags">
+          <span class="card__tag">Python</span>
+          <span class="card__tag">DL</span>
+          
+          
+        </div>
+      </div>
+      <div class="card__body">
+        <h3 class="card__title">Using YOLOv5 to Detect Orange Trees</h3>
+        <h5 class="card__title">Adv. Remote Sensing</h5>
+        <p class="card__detail">
+          This project compares YOLOv5 and SSD, two high-speed, single-shot object detection models, for orange tree-detection.
+        </p>
+        <p class="card__cta">Read more</p>
+      </div>
+    </a>
+
+    <a href="https://satyamspace.github.io/Projects/Remote%20Sensing%20%26%20Computer%20Vision/Solar Panel Detection in High-Resolution Images Using Faster RCNN.html" target="_blank" class="card">
+      <div class="card__img-container">
+        <img class="card__img" src="./images/SolardetectionRCNN.png" alt="unsplash random image" />
+        <div class="card__tags">
+          <span class="card__tag">Python</span>
+          <span class="card__tag">DL</span>
+          
+          
+        </div>
+      </div>
+      <div class="card__body">
+        <h3 class="card__title">Detection of Solar Panels using Faster RCNN</h3>
+        <h5 class="card__title">Adv. Remote Sensing</h5>
+        <p class="card__detail">
+          This project employs a Faster R-CNN architecture to accurately detect solar panels in high-resolution aerial imagery, enabling large-scale renewable energy mapping and monitoring.
+        </p>
+        <p class="card__cta">Read more</p>
+      </div>
+    </a>
+
+    <a href="https://satyamspace.github.io/Projects/Remote%20Sensing%20%26%20Computer%20Vision/Segmentation of Eucalyptus Areas in Eastern Mato Grosso do Sul.html" target="_blank" class="card">
+      <div class="card__img-container">
+        <img class="card__img" src="./images/eucalyptus.png" alt="unsplash random image" />
+        <div class="card__tags">
+          <span class="card__tag">Python</span>
+          <span class="card__tag">DL</span>
+          
+          
+        </div>
+      </div>
+      <div class="card__body">
+        <h3 class="card__title">Segmentation of Eucalyptus Zones in Eastern Mato</h3>
+        <h5 class="card__title">Adv. Remote Sensing</h5>
+        <p class="card__detail">
+          This project uses a U-Net DL model for semantic segmentation of multispectral satellite imagery to map and delineate eucalyptus plantations.
+        </p>
+        <p class="card__cta">Read more</p>
+      </div>
+    </a>
+
+    <a href="https://satyamspace.github.io/Projects/Remote%20Sensing%20%26%20Computer%20Vision/Advanced Semantic Segmentation Architectures - Part 2.html" target="_blank" class="card">
+      <div class="card__img-container">
+        <img class="card__img" src="./images/Advsemsegp2.png" alt="unsplash random image" />
+        <div class="card__tags">
+          <span class="card__tag">Python</span>
+          <span class="card__tag">DL</span>
+          <span class="card__tag">DeepLabV3+</span>
+          
+          
+        </div>
+      </div>
+      <div class="card__body">
+        <h3 class="card__title">Using DeepLabV3+ To Segment Cana Weeds</h3>
+        <h5 class="card__title">Adv. Remote Sensing</h5>
+        <p class="card__detail">
+          This project employs the DeepLabv3 model for semantic segmentation to accurately delineate cana weed patches in agricultural fields.
+        </p>
+        <p class="card__cta">Read more</p>
+      </div>
+    </a>
+
+    <a href="https://satyamspace.github.io/Projects/Remote%20Sensing%20%26%20Computer%20Vision/Advanced Semantic Segmentation Architectures - Part 1.html" target="_blank" class="card">
+      <div class="card__img-container">
+        <img class="card__img" src="./images/Advsemsegp1.png" alt="unsplash random image" />
+        <div class="card__tags">
+          <span class="card__tag">Python</span>
+          <span class="card__tag">DL</span>
+         
+          
+          
+        </div>
+      </div>
+      <div class="card__body">
+        <h3 class="card__title">Semantic Segmentation of Building and Houses</h3>
+        <h5 class="card__title">Adv. Remote Sensing</h5>
+        <p class="card__detail">
+          This project utilizes DL for the semantic segmentation of buildings in high-resolution aerial imagery.
+        </p>
+        <p class="card__cta">Read more</p>
+      </div>
+    </a>
+
+    <a href="https://satyamspace.github.io/Projects/Remote%20Sensing%20%26%20Computer%20Vision/Semantic Image Segmentation - Part 2.html" target="_blank" class="card">
+      <div class="card__img-container">
+        <img class="card__img" src="./images/semimagesegp2.png" alt="unsplash random image" />
+        <div class="card__tags">
+          <span class="card__tag">Python</span>
+          <span class="card__tag">DL</span>
+          <span class="card__tag">U-NET</span>
+         
+          
+          
+        </div>
+      </div>
+      <div class="card__body">
+        <h3 class="card__title">Using U-Net to Segment River Lines and Bodies</h3>
+        <h5 class="card__title">Adv. Remote Sensing</h5>
+        <p class="card__detail">
+          This project utilizes a U-Net architecture for the semantic segmentation of rivers from satellite imagery, enabling accurate hydrological mapping.
+        </p>
+        <p class="card__cta">Read more</p>
+      </div>
+    </a>
+
+    <a href="https://satyamspace.github.io/Projects/Remote%20Sensing%20%26%20Computer%20Vision/Weed Classification in Drone Images with Convolutional Networks.html" target="_blank" class="card">
+      <div class="card__img-container">
+        <img class="card__img" src="./images/weed.png" alt="unsplash random image" />
+        <div class="card__tags">
+          <span class="card__tag">Python</span>
+          <span class="card__tag">DL</span>
+          
+         
+          
+          
+        </div>
+      </div>
+      <div class="card__body">
+        <h3 class="card__title">Weed Classification in UAV Images with CNN</h3>
+        <h5 class="card__title">Adv. Remote Sensing</h5>
+        <p class="card__detail">
+          This project uses (CNNs) for weed classification in high-resolution drone imagery, enabling precise species identification.
+        </p>
+        <p class="card__cta">Read more</p>
+      </div>
+    </a>
+
+    <a href="https://satyamspace.github.io/Projects/Remote%20Sensing%20%26%20Computer%20Vision/Classification and detection of cars in Drone images.html" target="_blank" class="card">
+      <div class="card__img-container">
+        <img class="card__img" src="./images/cardetectionclassi.png" alt="unsplash random image" />
+        <div class="card__tags">
+          <span class="card__tag">Python</span>
+          <span class="card__tag">DL</span>
+          
+         
+          
+          
+        </div>
+      </div>
+      <div class="card__body">
+        <h3 class="card__title">Detection and Classification of Cars from Aerial Imagery</h3>
+        <h5 class="card__title">Adv. Remote Sensing</h5>
+        <p class="card__detail">
+          This project employs DL model to detect and classify cars in high-resolution aerial imagery.
+        </p>
+        <p class="card__cta">Read more</p>
+      </div>
+    </a>
+
+    <a href="https://satyamspace.github.io/Projects/Remote%20Sensing%20%26%20Computer%20Vision/Mapping_vegetation_and_weeds_with_artificial_neural_networks.html" target="_blank" class="card">
+      <div class="card__img-container">
+        <img class="card__img" src="./images/Mappingvegeandweeds.png" alt="unsplash random image" />
+        <div class="card__tags">
+          <span class="card__tag">Python</span>
+          <span class="card__tag">DL</span>
+          
+         
+          
+          
+        </div>
+      </div>
+      <div class="card__body">
+        <h3 class="card__title">Mapping Vegetation & Weeds with ANN</h3>
+        <h5 class="card__title">Adv. Remote Sensing</h5>
+        <p class="card__detail">
+          This project applies an ANN for mapping vegetation and weeds from imagery, performing pixel-level classification to distinguish crop areas from weed-infested regions.
+        </p>
+        <p class="card__cta">Read more</p>
+      </div>
+    </a>
+
+    <a href="https://satyamspace.github.io/Projects/Remote%20Sensing%20%26%20Computer%20Vision/PixelClassificaitonofSatelliteimageswithANN.html" target="_blank" class="card">
+      <div class="card__img-container">
+        <img class="card__img" src="./images/Pixelclassi.png" alt="unsplash random image" />
+        <div class="card__tags">
+          <span class="card__tag">Python</span>
+          <span class="card__tag">DL</span>
+          
+         
+          
+          
+        </div>
+      </div>
+      <div class="card__body">
+        <h3 class="card__title">Pixel Classification with ANN</h3>
+        <h5 class="card__title">Adv. Remote Sensing</h5>
+        <p class="card__detail">
+          This project uses an (ANN) to perform pixel-level classification of satellite imagery, enabling automated and accurate land cover mapping.
+        </p>
+        <p class="card__cta">Read more</p>
+      </div>
+    </a>
+
+    <!-- Geospatial Data Analytics Category -->
+    <div class="project__subcategory">
+      <h3>Geospatial Data Analytics</h3>
+    </div>
+    
+    <!-- Demo card 3 -->
+    <a href="https://satyamspace.github.io/Projects/Geospatial%20Data%20Analytics/SpatialAnalysis.pdf" target="_blank" class="card">
+      <div class="card__img-container">
+        <img class="card__img" src="./images/spa1.jpg" alt="unsplash random image" />
+        <div class="card__tags">
+          <span class="card__tag">ArcGIS Online</span>
+          <span class="card__tag">ArcGIS Pro</span>
+        </div>
+      </div>
+      <div class="card__body">
+        <h3 class="card__title">Banking Accessbility Network Analysis</h3>
+        <h5 class="card__title">Spatial Analytics</h5>
+        <p class="card__detail">
+          This dashboard shows the visualization of predator-prey ecological dynamics between Red Fox and Ground-Nesting Skylark.
+        </p>
+        <p class="card__cta">Read more</p>
+      </div>
+    </a>
+
+    
+
+    <!-- Demo card 4 -->
+    <a href="https://satyamspace.github.io/Projects/Geospatial%20Data%20Analytics/GDAreport.pdf" target="_blank" class="card">
+      <div class="card__img-container">
+        <img class="card__img" src="./images/nick1.png" alt="unsplash random image" />
+        <div class="card__tags">
+          <span class="card__tag">R</span>
+
+        </div>
+      </div>
+      <div class="card__body">
+        <h3 class="card__title">Pipeline Proximity Accidents Analysis</h3>
+        <h5 class="card__title">Advanced Spatial Analysis</h5>
+        <p class="card__detail">
+          This project analyzes accidents occurring in proximity to pipeline infrastructure across Ohio to identify high-risk areas.
+        </p>
+        <p class="card__cta">Read more</p>
+      </div>
+    </a>
+
+    <a href="https://satyamspace.github.io/Projects/Geospatial%20Data%20Analytics/FieldDataCapture.pdf" target="_blank" class="card">
+      <div class="card__img-container">
+         <img class="card__img" src="./images/geomatics.PNG" alt="unsplash random image" />
+          <div class="card__tags">
+          <span class="card__tag">ArcGIS Pro</span>
+          <span class="card__tag">Surfer</span>
+          <span class="card__tag">Meshlab</span>
+          <span class="card__tag">Pix4D</span>
+         </div>
+        </div>
+        <div class="card__body">
+          <h3 class="card__title">Survey Data Analysis</h3>
+          <h5 class="card__title">Geomatics Surveying</h5>
+          <p class="card__detail">
+                This project leverages a range of modern geomatics tools, including the analysis of point cloud data from LiDAR, TLS, and aerial photogrammetry, to perform detailed spatial analysis.
+             
+          </p>
+          <p class="card__cta">Read more</p>
+        </div>
+      </a>
+
+    <a href="https://satyamspace.github.io/Projects/Geospatial%20Data%20Analytics//LiDAR-Forest-Segmentation/3D_Individual_Tree_Segmentation.html" target="_blank" class="card">
+      <div class="card__img-container">
+         <img class="card__img" src="https://satyamspace.github.io/Projects/Geospatial%20Data%20Analytics//LiDAR-Forest-Segmentation/seg1l.png" alt="unsplash random image" />
+          <div class="card__tags">
+          <span class="card__tag">R</span>
+
+         </div>
+        </div>
+        <div class="card__body">
+          <h3 class="card__title">Forest Tree Crown Segmentation & Biomass Analysis</h3>
+          <h5 class="card__title">Geomatics Surveying</h5>
+          <p class="card__detail">
+                Please check my github repo for a comprehensive report of this project.
+             
+          </p>
+          <p class="card__cta">Read more</p>
+        </div>
+      </a>
+
+    <a href="https://satyamspace.github.io/Projects/Geospatial%20Data%20Analytics/floodsimulation.mp4" target="_blank" class="card">
+      <div class="card__img-container">
+         <img class="card__img" src="./images/floodsim.gif" alt="unsplash random image" />
+          <div class="card__tags">
+          <span class="card__tag">R</span>
+
+         </div>
+        </div>
+        <div class="card__body">
+          <h3 class="card__title">Urban Pluvial Flood Simulation</h3>
+          <h5 class="card__title">Geomatics Surveying</h5>
+          <p class="card__detail">
+                This simulation was developed using a numerical model based on the Shallow Water Equation.The model analyzes surface flow direction and inundation patterns under actual urban topography, driven by rainfall conditions, to assess overland flow dynamics and flood-prone areas
+             
+          </p>
+          <p class="card__cta">Read more</p>
+        </div>
+      </a>
+
+
+
+    <a href="https://satyamspace.github.io/Projects/Geospatial%20Data%20Analytics/solarplacementpotential.mp4" target="_blank" class="card">
+      <div class="card__img-container">
+         <img class="card__img" src="./images/solarplacementpotential.gif" alt="unsplash random image" />
+          <div class="card__tags">
+          <span class="card__tag">R</span>
+
+         </div>
+        </div>
+        <div class="card__body">
+          <h3 class="card__title">Solar Radiation Assessment for Panel Placement</h3>
+          <h5 class="card__title">Geomatics Surveying</h5>
+          <p class="card__detail">
+                This project showcases the potential of solar panel placements on rooftops by assessing zonal statistics and radiation.
+             
+          </p>
+          <p class="card__cta">Read more</p>
+        </div>
+      </a>
+
+    <a href="https://satyamspace.github.io/Projects/Geospatial%20Data%20Analytics/3dmodelgermany.mp4" target="_blank" class="card">
+      <div class="card__img-container">
+         <img class="card__img" src="./images/compressed_light_15fps.gif" alt="unsplash random image" />
+          <div class="card__tags">
+          <span class="card__tag">Metashape</span>
+          <span class="card__tag">Pix4D</span>
+
+         </div>
+        </div>
+        <div class="card__body">
+          <h3 class="card__title">Digital Twin 3D Model</h3>
+          <h5 class="card__title">Geomatics Surveying</h5>
+          <p class="card__detail">
+                Please check my github repo for a comprehensive report of this project.
+             
+          </p>
+          <p class="card__cta">Read more</p>
+        </div>
+      </a>
+
+    <a href="https://github.com/satyamspace/Projects/blob/main/Geospatial%20Data%20Analytics/3Model2.mp4" target="_blank" class="card">
+      <div class="card__img-container">
+         <img class="card__img" src="./images/3Model2.gif" alt="unsplash random image" />
+          <div class="card__tags">
+          <span class="card__tag">Metashape</span>
+          <span class="card__tag">Pix4D</span>
+
+         </div>
+        </div>
+        <div class="card__body">
+          <h3 class="card__title">3D Model of Resort</h3>
+          <h5 class="card__title">Geomatics Surveying</h5>
+          <p class="card__detail">
+                Please check my github repo for a comprehensive report of this project.
+             
+          </p>
+          <p class="card__cta">Read more</p>
+        </div>
+      </a>
+
+    <a href="https://satyamspace.github.io/Projects/Geospatial%20Data%20Analytics/3DModel1.mp4" target="_blank" class="card">
+      <div class="card__img-container">
+         <img class="card__img" src="./images/3DModel1.gif" alt="unsplash random image" />
+          <div class="card__tags">
+          <span class="card__tag">Metashape</span>
+          <span class="card__tag">Pix4D</span>
+
+         </div>
+        </div>
+        <div class="card__body">
+          <h3 class="card__title">3D Model of Ranch Site</h3>
+          <h5 class="card__title">Geomatics Surveying</h5>
+          <p class="card__detail">
+                Please check my github repo for a comprehensive report of this project.
+             
+          </p>
+          <p class="card__cta">Read more</p>
+        </div>
+      </a>
+
+    <a href="https://satyamspace.github.io/Projects/Geospatial%20Data%20Analytics/trimmedp1.mp4" target="_blank" class="card">
+      <div class="card__img-container">
+         <img class="card__img" src="./images/trimmedp1.gif" alt="unsplash random image" />
+          <div class="card__tags">
+          <span class="card__tag">Metashape</span>
+          <span class="card__tag">Pix4D</span>
+
+         </div>
+        </div>
+        <div class="card__body">
+          <h3 class="card__title">3D Model of Suburb (Austin)</h3>
+          <h5 class="card__title">Geomatics Surveying</h5>
+          <p class="card__detail">
+                Please check my github repo for a comprehensive report of this project.
+             
+          </p>
+          <p class="card__cta">Read more</p>
+        </div>
+      </a>
+
+    <a href="https://satyamspace.github.io/Projects/Geospatial%20Data%20Analytics/Roof_Condition_Report_C.pdf" target="_blank" class="card">
+      <div class="card__img-container">
+         <img class="card__img" src="./images/roof_overview.png" alt="unsplash random image" />
+          <div class="card__tags">
+          <span class="card__tag">Metashape</span>
+          <span class="card__tag">Python</span>
+
+         </div>
+        </div>
+        <div class="card__body">
+          <h3 class="card__title">Rooftop Condition Report</h3>
+          <h5 class="card__title">Geomatics Surveying</h5>
+          <p class="card__detail">
+                Please check my github repo for a comprehensive report of this project.
+             
+          </p>
+          <p class="card__cta">Read more</p>
+        </div>
+      </a>
+
+    <a href="./images/thermalmapbestversion.png" target="_blank" class="card">
+      <div class="card__img-container">
+         <img class="card__img" src="./images/newthermal-ezgif.com-video-to-gif-converter.gif" alt="unsplash random image" />
+          <div class="card__tags">
+          <span class="card__tag">Metashape</span>
+          <span class="card__tag">Python</span>
+
+         </div>
+        </div>
+        <div class="card__body">
+          <h3 class="card__title">Thermal Mapping (Campus Rooftop)</h3>
+          <h5 class="card__title">Geomatics Surveying</h5>
+          <p class="card__detail">
+                Please check my github repo for a comprehensive report of this project.
+             
+          </p>
+          <p class="card__cta">Read more</p>
+        </div>
+      </a>
+
+ 
+
+    <!-- Cartography & Visualization Category -->
+    <div class="project__subcategory">
+      <h3>Cartography & Visualization</h3>
+    </div>
+    
+    <!-- Demo card 5 -->
+    <a href="https://www.arcgis.com/apps/dashboards/614e95b5ec3a4b4da47f5b095adee0b0" target="_blank" class="card">
+      <div class="card__img-container">
+        <img class="card__img" src="./images/Dashfox.png" alt="unsplash random image" />
+        <div class="card__tags">
+          <span class="card__tag">ArcGIS Pro</span>
+        </div>
+      </div>
+      <div class="card__body">
+        <h3 class="card__title">Predation Patterns of Fox and Skylark Dashboard</h3>
+        <h5 class="card__title">Geovisualization and Advanced Cartography</h5>
+        <p class="card__detail">
+          The dashboard shows the predator-prey temporal dynamics between Fox and Skylark.
+        </p>
+        <p class="card__cta">Read more</p>
+      </div>
+    </a>
+
+    <a href="https://www.arcgis.com/apps/dashboards/a29618b9b1304c1ca9974e5b21044c0c" target="_blank" class="card">
+      <div class="card__img-container">
+        <img class="card__img" src="./images/Dashcrime.png" alt="unsplash random image" />
+        <div class="card__tags">
+          <span class="card__tag">ArcGIS Pro</span>
+        </div>
+      </div>
+      <div class="card__body">
+        <h3 class="card__title">Chicago Crime Spectrum Dashboard</h3>
+        <h5 class="card__title">Geovisualization and Advanced Cartography</h5>
+        <p class="card__detail">
+          The dashboard shows the crime rates and distribution of crime types across community areas of Chicago.
+        </p>
+        <p class="card__cta">Read more</p>
+      </div>
+    </a>
+
+    <a href="https://satyamspace.github.io/Projects/Cartography%20%26%20Visualization/Isochrone%20Map/Manchester_UK_multi_mode.png" target="_blank" class="card">
+      <div class="card__img-container">
+        <img class="card__img" src="./images/Manchester_UK_multi_mode.png" alt="unsplash random image" />
+        <div class="card__tags">
+          <span class="card__tag">Python</span>
+        </div>
+      </div>
+      <div class="card__body">
+        <h3 class="card__title">Isochrone Map of Manchester</h3>
+        <h5 class="card__title">Geovisualization and Advanced Cartography</h5>
+        <p class="card__detail">
+          Isochrone map depicting reachable areas within specific times for walking, cycling, and driving.
+        </p>
+        <p class="card__cta">Read more</p>
+      </div>
+    </a>
+
+    <a href="https://satyamspace.github.io/Projects/Cartography%20%26%20Visualization/CartoLAY FINAL.jpg" target="_blank" class="card">
+      <div class="card__img-container">
+        <img class="card__img" src="./images/CartoLAY FINAL.jpg" alt="unsplash random image" />
+        <div class="card__tags">
+          <span class="card__tag">ArcGIS Pro</span>
+        </div>
+      </div>
+      <div class="card__body">
+        <h3 class="card__title">Cartogram Map</h3>
+        <h5 class="card__title">Geovisualization and Advanced Cartography</h5>
+        <p class="card__detail">
+          Cartogram map showing unemployment vulnerability and aid claimants across Leicester.
+        </p>
+        <p class="card__cta">Read more</p>
+      </div>
+    </a>
+
+    <a href="https://satyamspace.github.io/Projects/Cartography%20%26%20Visualization/PropLay.jpg" target="_blank" class="card">
+      <div class="card__img-container">
+        <img class="card__img" src="https://satyamspace.github.io/Projects/Cartography%20%26%20Visualization/PropLay.jpg" alt="unsplash random image" />
+        <div class="card__tags">
+          <span class="card__tag">ArcGIS Pro</span>
+        </div>
+      </div>
+      <div class="card__body">
+        <h3 class="card__title">Proportional Symbol Map</h3>
+        <h5 class="card__title">Geovisualization and Advanced Cartography</h5>
+        <p class="card__detail">
+          This map shows stop and search patrolling hotspots across Leicester.
+        </p>
+        <p class="card__cta">Read more</p>
+      </div>
+    </a>
+
+    <a href="https://satyamspace.github.io/Projects/Cartography%20%26%20Visualization/Bivariate1.jpg" target="_blank" class="card">
+      <div class="card__img-container">
+        <img class="card__img" src="https://satyamspace.github.io/Projects/Cartography%20%26%20Visualization/Bivariate1.jpg" alt="unsplash random image" />
+        <div class="card__tags">
+          <span class="card__tag">ArcGIS Pro</span>
+        </div>
+      </div>
+      <div class="card__body">
+        <h3 class="card__title">Bivariate Map</h3>
+        <h5 class="card__title">Geovisualization and Advanced Cartography</h5>
+        <p class="card__detail">
+          Bivariate map showing unemployment and economic disengagement across Leicester wards.
+        </p>
+        <p class="card__cta">Read more</p>
+      </div>
+    </a>
+
+    <a href="https://satyamspace.github.io/Projects/Cartography%20%26%20Visualization/Small Multiple LAY.jpg" target="_blank" class="card">
+      <div class="card__img-container">
+        <img class="card__img" src="https://satyamspace.github.io/Projects/Cartography%20%26%20Visualization/Small Multiple LAY.jpg" alt="unsplash random image" />
+        <div class="card__tags">
+          <span class="card__tag">ArcGIS Pro</span>
+        </div>
+      </div>
+      <div class="card__body">
+        <h3 class="card__title">Choropleth Small Multiple Maps</h3>
+        <h5 class="card__title">Geovisualization and Advanced Cartography</h5>
+        <p class="card__detail">
+          This map shows the diversity and frequency of crimes across Leicester.
+        </p>
+        <p class="card__cta">Read more</p>
+      </div>
+    </a>
+
+    <a href="./images/Buildingtype800.jpg" target="_blank" class="card">
+      <div class="card__img-container">
+        <img class="card__img" src="./images/Buildingtype800.jpg" />
+        <div class="card__tags">
+          <span class="card__tag">ArcGIS Pro</span>
+          <span class="card__tag">Space Syntax</span>
+        </div>
+      </div>
+      <div class="card__body">
+        <h3 class="card__title">Building Types Classification</h3>
+        <h5 class="card__title">Geovisualization and Advanced Cartography</h5>
+        <p class="card__detail">
+          This map shows landuse around Borwon Mongkol Temple classified into 9 classes.
+        </p>
+        <p class="card__cta">Read more</p>
+      </div>
+    </a>
+
+    <a href="./images/ariel.jpg" target="_blank" class="card">
+      <div class="card__img-container">
+        <img class="card__img" src="./images/ariel.jpg" />
+        <div class="card__tags">
+          <span class="card__tag">ArcGIS Pro</span>
+          <span class="card__tag">QGIS</span>
+        </div>
+      </div>
+      <div class="card__body">
+        <h3 class="card__title">Landslide Hazard Map</h3>
+        <h5 class="card__title">Geovisualization and Advanced Cartography</h5>
+        <p class="card__detail">
+          This map shows landslide hazard susceptibility in the Municipality of Lakewood.
+        </p>
+        <p class="card__cta">Read more</p>
+      </div>
+    </a>
+
+    <a href="./images/ariel2.jpg" target="_blank" class="card">
+      <div class="card__img-container">
+        <img class="card__img" src="./images/ariel2.jpg" />
+        <div class="card__tags">
+          <span class="card__tag">ArcGIS Pro</span>
+          <span class="card__tag">QGIS</span>
+        </div>
+      </div>
+      <div class="card__body">
+        <h3 class="card__title">Rainfall Return Flood Map</h3>
+        <h5 class="card__title">Geovisualization and Advanced Cartography</h5>
+        <p class="card__detail">
+          This map shows 100-YR rainfall return flood hazard susceptibility in the Municipality of Lakewood.
+        </p>
+        <p class="card__cta">Read more</p>
+      </div>
+    </a>
+
+    <a href="./images/ariel3.jpg" target="_blank" class="card">
+      <div class="card__img-container">
+        <img class="card__img" src="./images/ariel3.jpg" />
+        <div class="card__tags">
+          <span class="card__tag">ArcGIS Pro</span>
+          <span class="card__tag">QGIS</span>
+        </div>
+      </div>
+      <div class="card__body">
+        <h3 class="card__title">Annual Average Rainfall Map</h3>
+        <h5 class="card__title">Geovisualization and Advanced Cartography</h5>
+        <p class="card__detail">
+          This map shows the annual average weekly precipitation spread in the Municipality of Lakewood.
+        </p>
+        <p class="card__cta">Read more</p>
+      </div>
+    </a>
+
+    <a href="https://satyamspace.github.io/3D/" target="_blank" class="card">
+      <div class="card__img-container">
+        <img class="card__img" src="./images/trimmed.gif" />
+        <div class="card__tags">
+          <span class="card__tag">QGIS2ThreeJS</span>
+          <span class="card__tag">QGIS</span>
+          <span class="card__tag">3D Visualization</span>
+        </div>
+      </div>
+      <div class="card__body">
+        <h3 class="card__title">3D Terrain from Orthophoto and DEM</h3>
+        <h5 class="card__title">Geovisualization and Advanced Cartography</h5>
+        <p class="card__detail">
+          This 3D interactive map shows the overlaid RGB orthophoto on top of DEM to better visualize depth.
+        </p>
+        <p class="card__cta">Read more</p>
+      </div>
+    </a>
+
+    <a href="https://satyamspace.github.io/Projects/Cartography%20%26%20Visualization/Global%20Internet%20Cable%20Spread/Interactive%20Link.html" target="_blank" class="card">
+      <div class="card__img-container">
+        <img class="card__img" src="./images/intfgg.gif" />
+        <div class="card__tags">
+          <span class="card__tag">Python</span>
+          <span class="card__tag">Leafmap</span>
+          <span class="card__tag">2D Visualization</span>
+        </div>
+      </div>
+      <div class="card__body">
+        <h3 class="card__title">Global Internet Connectivity</h3>
+        <h5 class="card__title">Geovisualization and Advanced Cartography</h5>
+        <p class="card__detail">
+          This interactive map visualizes the backbone of global internet connectivity, highlighting the densest cable networks, critical coastal hubs, and regions with lower connectivity
+        </p>
+        <p class="card__cta">Read more</p>
+      </div>
+    </a>
+
+    <a href="https://satyamspace.github.io/Projects/Cartography%20%26%20Visualization/Wind%20Map/UKWindMap.gif" target="_blank" class="card">
+      <div class="card__img-container">
+        <img class="card__img" src="https://satyamspace.github.io/Projects/Cartography%20%26%20Visualization/Wind%20Map/UKWindMap.gif" />
+        <div class="card__tags">
+          <span class="card__tag">Python</span>
+          <span class="card__tag">Leafmap</span>
+          <span class="card__tag">2D Visualization</span>
+        </div>
+      </div>
+      <div class="card__body">
+        <h3 class="card__title">Wind Flow Visualization</h3>
+        <h5 class="card__title">Geovisualization and Advanced Cartography</h5>
+        <p class="card__detail">
+          This is a high-quality wind animation showing temporal changes in wind patterns across the UK.
+        </p>
+        <p class="card__cta">Read more</p>
+      </div>
+    </a>
+
+    <a href="https://satyamspace.github.io/Projects/Cartography%20%26%20Visualization/Global%20Flight%20Route%20and%20Network%20Map/Global_Airport_Routes_Final.png" target="_blank" class="card">
+      <div class="card__img-container">
+        <img class="card__img" src="https://satyamspace.github.io/Projects/Cartography%20%26%20Visualization/Global%20Flight%20Route%20and%20Network%20Map/Global_Airport_Routes_Final.png" />
+        <div class="card__tags">
+          <span class="card__tag">Python</span>
+          
+          <span class="card__tag">2D Visualization</span>
+        </div>
+      </div>
+      <div class="card__body">
+        <h3 class="card__title">Global Flight Routes and Airport Network</h3>
+        <h5 class="card__title">Geovisualization and Advanced Cartography</h5>
+        <p class="card__detail">
+          This is a high-quality informative visualization that reveals the underlying patterns of global air travel.
+        </p>
+        <p class="card__cta">Read more</p>
+      </div>
+    </a>
+
+    <a href="https://satyamspace.github.io/Projects/Cartography%20%26%20Visualization/3D%20Map/3d_switzerland_land_cover_final.png" target="_blank" class="card">
+      <div class="card__img-container">
+        <img class="card__img" src="https://satyamspace.github.io/Projects/Cartography%20%26%20Visualization/3D%20Map/3d_switzerland_land_cover_final.png" />
+        <div class="card__tags">
+          <span class="card__tag">R</span>
+          
+          <span class="card__tag">3D Visualization</span>
+        </div>
+      </div>
+      <div class="card__body">
+        <h3 class="card__title">3D Land Cover Switzerland</h3>
+        <h5 class="card__title">Geovisualization and Advanced Cartography</h5>
+        <p class="card__detail">
+          This is a high-quality 3D LULC terrain render of Switzerland.
+        </p>
+        <p class="card__cta">Read more</p>
+      </div>
+    </a>
+
+    <!-- GeoAI (AI for Geospatial) Category -->
+    <div class="project__subcategory">
+      <h3>GeoAI (AI for Geospatial)</h3>
+    </div>
+    
+    <!-- Demo card 6 -->
+    <a href="https://satyamspace.github.io/Projects/GeoAi%20(Ai%20for%20Geospatial)/GeoAi%20Report.pdf" target="_blank" class="card">
+      <div class="card__img-container">
+        <img class="card__img" src="./images/geoaio.png" alt="unsplash random image"/>
+        <div class="card__tags">
+          <span class="card__tag">GeoAi</span>
+          <span class="card__tag">ML</span>
+          <span class="card__tag">Python</span>
+          <span class="card__tag">Plotly</span>
+        </div>
+      </div>
+      <div class="card__body">
+        <h3 class="card__title">Developing Location-Based-Services(LBS) Application</h3>
+        <h5 class="card__title">Geographical Ai</h5>
+        <p class="card__detail">
+          This project consisted of making use of GR POI ranking algorithms to develop LBS system.
+        </p>
+        <p class="card__cta">Read more</p>
+      </div>
+    </a>
+
+  </div>
+</section>
+    <!-- ===== PUBLICATIONS =====  -->
+<section class="proj section bd-grid" id="publications">
+  <div class="section_header">
+    <p class="publications_head">Publications</p>
+  </div>
+  
+  <div class="projs__container">
+
+    <!-- Publication 1 -->
+    <a href="https://zenodo.org/records/15777520" target="_blank" class="card">
+      <div class="card__img-container">
+        <img class="card__img" src="./images/pubb.png" alt="publication image" />
+        <div class="card__tags">
+          <span class="card__tag">Ecosystem Services</span>
+          <span class="card__tag">Pollinator</span>
+          <span class="card__tag">GIS</span>
+          <span class="card__tag">R</span>
+        </div>
+      </div>
+      <div class="card__body">
+        <h3 class="card__title">Assessing Ecosystem Services of Greenspaces</h3>
+        <h5 class="card__title">Zenodo</h5>
+        <p class="card__detail">
+          This was my undergraduate thesis looking at how we could assess the ecosystem services from greenspaces where pollinators and plants were major proxy variables.
+        </p>
+        <p class="card__cta">Read paper</p>
+      </div>
+    </a>
+
+    <a href="https://doi.org/10.21203/rs.3.rs-8565802/v1" target="_blank" class="card">
+      <div class="card__img-container">
+        <img class="card__img" src="./images/pub2.png" alt="publication image" />
+        <div class="card__tags">
+          <span class="card__tag">Wildfire Mapping</span>
+          <span class="card__tag">GIS</span>
+          <span class="card__tag">Sentinel-2</span>
+          <span class="card__tag">Python</span>
+        </div>
+      </div>
+      <div class="card__body">
+        <h3 class="card__title">Multi-temporal Sentinel-2 consensus mapping framework for enhanced wildfire severity assessment in semi-arid East Africa</h3>
+        <h5 class="card__title">Research Square</h5>
+        <p class="card__detail">
+          
+        </p>
+        <p class="card__cta">Read paper</p>
+      </div>
+    </a>
+
+    <a href="https://studia.reviste.ubbcluj.ro/index.php/chemia/article/view/10162/9806" target="_blank" class="card">
+      <div class="card__img-container">
+        <img class="card__img" src="./images/studiapub.png" alt="publication image" />
+        <div class="card__tags">
+          <span class="card__tag">Water</span>
+          <span class="card__tag">GIS</span>
+          <span class="card__tag">WQI Index</span>
+          
+        </div>
+      </div>
+      <div class="card__body">
+        <h3 class="card__title">Groundwater Quality Assessment in the Suburban Localities of Hadapsar, Pune Using WQI Methodology</h3>
+        <h5 class="card__title">Studia Universitatis Babes-Bolyai Chemia </h5>
+        <p class="card__detail">
+          
+        </p>
+        <p class="card__cta">Read paper</p>
+      </div>
+    </a>
+
+    <a href="https://jee.cultechpub.com/index.php/jee/article/view/54/20" target="_blank" class="card">
+      <div class="card__img-container">
+        <img class="card__img" src="./images/pub3.png" alt="publication image" />
+        <div class="card__tags">
+          <span class="card__tag">Vegetation Dynamics</span>
+          <span class="card__tag">GIS</span>
+          <span class="card__tag">Sentinel-2</span>
+          <span class="card__tag">Python</span>
+          
+        </div>
+      </div>
+      <div class="card__body">
+        <h3 class="card__title">Spatiotemporal Patterns of Vegetation Greenness Dynamics Across India (2001-2023):A Harmonic Analysis of MODIS NDVI Time Series</h3>
+        <h5 class="card__title">Journal of Environmental Ecology</h5>
+        <p class="card__detail">
+          
+        </p>
+        <p class="card__cta">Read paper</p>
+      </div>
+    </a>
+
+    <a href="https://www.mdpi.com/2300-7575/26/2/24" target="_blank" class="card">
+      <div class="card__img-container">
+        <img class="card__img" src="./images/lim1.png" alt="publication image" />
+        <div class="card__tags">
+          <span class="card__tag">Water Hyacinth</span>
+          <span class="card__tag">GIS</span>
+          <span class="card__tag">Python</span>
+          
+        </div>
+      </div>
+      <div class="card__body">
+        <h3 class="card__title">Quantifying Seasonal Shoreline Distribution of Water Hyacinth (<i>Eichhornia crassipes</i>) in Winam Gulf, Lake Victoria</h3>
+        <h5 class="card__title">Limnological Review (MDPI) </h5>
+        <p class="card__detail">
+          
+        </p>
+        <p class="card__cta">Read paper</p>
+      </div>
+    </a>
+
+    <a href="https://doi.org/10.52804/ijaas2026.714 " target="_blank" class="card">
+      <div class="card__img-container">
+        <img class="card__img" src="./images/IJAS.png" alt="publication image" />
+        <div class="card__tags">
+          <span class="card__tag">Hyperspectral RS</span>
+          <span class="card__tag">GIS</span>
+          <span class="card__tag">Precision Agriculture</span>
+          
+        </div>
+      </div>
+      <div class="card__body">
+        <h3 class="card__title">Hyperspectral Remote Sensing in Precision Agriculture: Comprehensive Review of Applications and Emerging Technologies
+
+</h3>
+        <h5 class="card__title">International Journal of Agricultural and Applied Sciences </h5>
+        <p class="card__detail">
+          
+        </p>
+        <p class="card__cta">Read paper</p>
+      </div>
+    </a>
+
+    <!-- Add more publication cards here as needed -->
+    <!-- Example template for additional publications:
+    <a href="LINK_TO_PUBLICATION" target="_blank" class="card">
+      <div class="card__img-container">
+        <img class="card__img" src="IMAGE_PATH" alt="publication image" />
+        <div class="card__tags">
+          <span class="card__tag">Tag1</span>
+          <span class="card__tag">Tag2</span>
+        </div>
+      </div>
+      <div class="card__body">
+        <h3 class="card__title">Publication Title</h3>
+        <h5 class="card__title">Journal/Conference Name</h5>
+        <p class="card__detail">
+          Brief description of the publication.
+        </p>
+        <p class="card__cta">Read paper</p>
+      </div>
+    </a>
+    -->
+    
+  </div>
+</section>
+    <!-- ===== CERTIFICATIONS =====  -->
+<section class="proj section bd-grid" id="certifications">
+  <div class="section_header">
+    <p class="certifications_head">Certifications</p>
+  </div>
+  
+  <div class="projs__container">
+
+    <!-- Certification 1 -->
+    <a href="https://udemy-certificate.s3.amazonaws.com/pdf/UC-6904dbb1-5e43-4fba-8339-28197e7ea893.pdf" target="_blank" class="card">
+      <div class="card__img-container">
+        <img class="card__img" src="./images/udemy.png" alt="certification image" />
+        <div class="card__tags">
+          <span class="card__tag">GIS</span>
+          <span class="card__tag">UDEMY</span>
+        </div>
+      </div>
+      <div class="card__body">
+        <h3 class="card__title">WebGIS:Beginner to Advanced</h3>
+        <h5 class="card__title">Udemy</h5>
+
+        <p class="card__cta">View Certificate</p>
+      </div>
+    </a>
+
+    <a href="https://drive.google.com/file/d/1mPWSv89z5ss-Plo_sdxd7uvvyYaNlHt4/view?usp=sharing" target="_blank" class="card">
+      <div class="card__img-container">
+        <img class="card__img" src="./images/ugcs.jpg" alt="certification image" />
+        <div class="card__tags">
+          <span class="card__tag">UAV</span>
+          <span class="card__tag">Surveying</span>
+        </div>
+      </div>
+      <div class="card__body">
+        <h3 class="card__title">UgCS Basics</h3>
+        <h5 class="card__title">SPH Engineering</h5>
+
+        <p class="card__cta">View Certificate</p>
+      </div>
+    </a>
+
+    <a href="https://openlearning.unesco.org/certificates/02c56dcc034a47ac9c1a0d71696c244a" target="_blank" class="card">
+      <div class="card__img-container">
+        <img class="card__img" src="./images/USACE Open Hydrology Certificate _ UNESCO Open Learning_page-0001.jpg" alt="certification image" />
+        <div class="card__tags">
+          <span class="card__tag">Hydrology</span>
+          <span class="card__tag">UNESCO</span>
+        </div>
+      </div>
+      <div class="card__body">
+        <h3 class="card__title">Hydrologic Modeling with HEC-HMS</h3>
+        <h5 class="card__title">UNESCO</h5>
+
+        <p class="card__cta">View Certificate</p>
+      </div>
+    </a>
+
+    <a href="https://drive.google.com/file/d/1TckHzTnpYLhitNPUCrTQ1N8AWWcTXIGr/view?usp=sharing" target="_blank" class="card">
+      <div class="card__img-container">
+        <img class="card__img" src="./images/odin.png" alt="certification image" />
+        <div class="card__tags">
+          <span class="card__tag">Data Science</span>
+          <span class="card__tag">Power BI</span>
+        </div>
+      </div>
+      <div class="card__body">
+        <h3 class="card__title">Certified Data Science Professional</h3>
+        <h5 class="card__title">Odin School</h5>
+
+        <p class="card__cta">View Certificate</p>
+      </div>
+    </a>
+
+    <a href="https://drive.google.com/file/d/1rMjOH4ob241RIUgy7wKPPEtWq5haCr1w/view?usp=sharing" target="_blank" class="card">
+      <div class="card__img-container">
+        <img class="card__img" src="./images/consv.png" alt="certification image" />
+        <div class="card__tags">
+          <span class="card__tag">Data Science</span>
+          <span class="card__tag">Power BI</span>
+        </div>
+      </div>
+      <div class="card__body">
+        <h3 class="card__title">Application of GIS in Conservation </h3>
+        <h5 class="card__title">RCMRD</h5>
+
+        <p class="card__cta">View Certificate</p>
+      </div>
+    </a>
+
+    <!-- Certification 2 -->
+    <a href="https://arset.unhosting.site/pluginfile.php/1/tool_certificate/issues/1724182117/0582557507SS.pdf" target="_blank" class="card">
+      <div class="card__img-container">
+        <img class="card__img" src="./images/arset.png" alt="certification image" />
+        <div class="card__tags">
+          <span class="card__tag">Remote Sensing</span>
+          <span class="card__tag">Earth Observation</span>
+        </div>
+      </div>
+      <div class="card__body">
+        <h3 class="card__title">Developing Sustainable Earth Observation Applications</h3>
+        <h5 class="card__title">NASA ARSET</h5>
+
+        <p class="card__cta">View Certificate</p>
+      </div>
+    </a>
+
+    <a href="https://drive.google.com/file/d/1f-s4jFk6tAvxYuHcSCfjco_SMQKepoQL/view?usp=sharing" target="_blank" class="card">
+      <div class="card__img-container">
+        <img class="card__img" src="./images/carto.png" alt="certification image" />
+        <div class="card__tags">
+          <span class="card__tag">ESRI</span>
+          <span class="card__tag">Cartography</span>
+        </div>
+      </div>
+      <div class="card__body">
+        <h3 class="card__title">Cartography</h3>
+        <h5 class="card__title">ESRI</h5>
+
+        <p class="card__cta">View Certificate</p>
+      </div>
+    </a>
+
+    <a href="https://drive.google.com/file/d/1r2gX7JKa52HS1OPy3IRoun-mWS4nvZEi/view?usp=sharing" target="_blank" class="card">
+      <div class="card__img-container">
+        <img class="card__img" src="./images/hydroo.png" alt="certification image" />
+        <div class="card__tags">
+          <span class="card__tag">ESRI</span>
+          <span class="card__tag">Modelling</span>
+        </div>
+      </div>
+      <div class="card__body">
+        <h3 class="card__title">Hydrological  Modelling</h3>
+        <h5 class="card__title">ESRI</h5>
+
+        <p class="card__cta">View Certificate</p>
+      </div>
+    </a>
+
+    <a href="https://drive.google.com/file/d/1XHLbzkEEMZnE4u59pUF1widYeqMZ2ELV/view?usp=sharing" target="_blank" class="card">
+      <div class="card__img-container">
+        <img class="card__img" src="./images/carbon.png" alt="certification image" />
+        <div class="card__tags">
+          <span class="card__tag">ESRI</span>
+          <span class="card__tag">Modelling</span>
+        </div>
+      </div>
+      <div class="card__body">
+        <h3 class="card__title">Carbon Literate</h3>
+        <h5 class="card__title">Carbin Literacy Project</h5>
+
+        <p class="card__cta">View Certificate</p>
+      </div>
+    </a>
+
+    <!-- Add more certification cards as needed -->
+    
+  </div>
+</section>
+
+    <!-- ===== Achievement =====  -->
+    <section class="proj section bd-grid" id="achieve">
+      <div class="section_header">
+        <p class="achieve_head">Achievement & Awards</p>
+      </div>
+
+      <div class="projs__container">
+        <a href="./images/BEB0409B-B715-47AB-A330-A495433FC576.JPEG" target="_blank" class="card">
+          <div class="card__img-container">
+            <img class="card__img" src="./images/BEB0409B-B715-47AB-A330-A495433FC576.JPEG" alt="unsplash random image" />
+            <div class="card__tags">
+              <span class="card__tag">Python</span>
+
+            </div>
+          </div>
+          <div class="card__body">
+            <h3 class="card__title">Gatsby Plant Science Program Grant</h3>
+            
+            <h9 class="card__title">University of Cambridge</h9>
+            <p class="card__detail">
+              I was one of a few students from top UK universities awarded a prestigious grant to attend the highly competitive GPSEP.
+             
+            </p>
+            <p class="card__cta">Read more</p>
+          </div>
+        </a>
+
+        <a href="./images/FB580501-ED41-492D-807C-3C3AEB072C61.JPEG" target="_blank" class="card">
+          <div class="card__img-container">
+            <img class="card__img" src="./images/FB580501-ED41-492D-807C-3C3AEB072C61.JPEG" alt="unsplash random image" />
+            <div class="card__tags">
+              <span class="card__tag">UAV Design</span>
+
+            </div>
+          </div>
+          <div class="card__body">
+            <h3 class="card__title">Modular Custom UAV</h3>
+            
+            <h9 class="card__title">First Prize Physics Project</h9>
+            <p class="card__detail">
+              I was awarded 1st Prize upon developing a modular custom drone capable of picking and dropping payloads.
+            
+            </p>
+            <p class="card__cta">Read more</p>
+          </div>
+        </a>
+        <a href="./images/Leicester-Award-Gold-Information-Session-1-320.webp" target="_blank" class="card">
+          <div class="card__img-container">
+            <img class="card__img" src="./images/Leicester-Award-Gold-Information-Session-1-320.webp" alt="unsplash random image" />
+            <div class="card__tags">
+              <span class="card__tag">Biochemistry</span>
+              <span class="card__tag">Genomics</span>
+              <span class="card__tag">Bioinformatics</span>
+
+            </div>
+          </div>
+          <div class="card__body">
+            <h3 class="card__title">
+              STEMist Hack2.0 </h3>
+            <h3 class="card__title">Leicester Gold Award</h3>
+            <h9 class="card__title">University of Leicester</h9>
+            <p class="card__detail">
+              Awarded the prestigious Leicester Gold Award for academic excellence and significant extracurricular engagement.
+             
+            </p>
+            <p class="card__cta">Read more</p>
+          </div>
+        </a>
+        <a href="./images/2022DEC6-59AE-4DDA-B020-FA3C0A9526BB.JPEG" target="_blank" class="card">
+          <div class="card__img-container">
+            <img class="card__img" src="./images/2022DEC6-59AE-4DDA-B020-FA3C0A9526BB.JPEG" alt="unsplash random image" />
+            <div class="card__tags">
+              <span class="card__tag">Communication</span>
+              <span class="card__tag">Simulation Control</span>
+
+            </div>
+          </div>
+          <div class="card__body">
+
+            <h3 class="card__title">Uk Space Conference 2019</h3>
+            <h9 class="card__title">1st Prize Docking Simulation</h9>
+            <p class="card__detail">
+              I was awarded a prize for outperforming competitors in a technical simulation of docking a Soyuz spacecraft to the International Space Station
+             
+            </p>
+            <p class="card__cta">Read more</p>
+          </div>
+        </a>
+        
+        
+      </div>
+      </section>
+      
+       <!-- ===== SERVICES =====  -->
+<section class="proj section bd-grid" id="services">
+  <div class="section_header">
+    <p class="services_head">Services</p>
+  </div>
+  
+  <div class="services__container">
+    
+    <!-- Top Row Services -->
+    
+    <!-- Service 1: Geospatial Analysis -->
+    <div class="service__card">
+      <div class="service__icon">
+        <img src="./images/geospat.jpeg" alt="Geospatial Analysis">
+      </div>
+      <h3 class="service__title">Geospatial Analysis</h3>
+      <p class="service__description">
+        Spatial statistics, spatial modelling, site suitability, geoprocessing and map production.
+      </p>
+    </div>
+
+    <!-- Service 2: Remote Sensing -->
+    <div class="service__card">
+      <div class="service__icon">
+        <img src="./images/remotesensing.jpeg" alt="Remote Sensing">
+      </div>
+      <h3 class="service__title">Remote Sensing</h3>
+      <p class="service__description">
+        Satellite & UAV imagery processing, land-use mapping, change detection and feature extraction.
+      </p>
+    </div>
+
+    <!-- Service 3: Cartography & Visualization -->
+    <div class="service__card">
+      <div class="service__icon">
+        <img src="./images/carto.jpg" alt="Cartography & Visualization">
+      </div>
+      <h3 class="service__title">Cartography & Visualization</h3>
+      <p class="service__description">
+        Publication maps, interactive web maps and data storytelling with Mapbox / Leaflet / D3.
+      </p>
+    </div>
+
+    <!-- Service 4: Geospatial Data Science -->
+    <div class="service__card">
+      <div class="service__icon">
+        <img src="./images/spatanal.png" alt="Geospatial Data Science">
+
+      </div>
+      <h3 class="service__title">Geospatial Data Science</h3>
+      <p class="service__description">
+        Machine learning, predictive modelling, object detection and automated geoprocessing pipelines.
+      </p>
+    </div>
+
+    <!-- Bottom Row Services -->
+    
+    <!-- Service 5: Field Surveying & Data Capture -->
+    <div class="service__card">
+      <div class="service__icon">
+        <img src="./images/drone.jpg" alt="Field Surveying & Data Capture">
+      </div>
+      <h3 class="service__title">Field Surveying & Data Capture</h3>
+      <p class="service__description">
+        GNSS/GPS surveys, UAV flight planning & acquisition, total station support and ground truth collection.
+      </p>
+    </div>
+
+    <!-- Service 6: 3D Mapping & Point Clouds -->
+    <div class="service__card">
+      <div class="service__icon">
+        <img src="./images/pointcloud.jpeg" alt="3D Mapping & Point Clouds">
+      </div>
+      <h3 class="service__title">3D Mapping & Point Clouds</h3>
+      <p class="service__description">
+        SfM photogrammetry, LiDAR/TLS processing, point-cloud classification, DEM/DSM and 3D reconstruction.
+      </p>
+    </div>
+
+    <!-- Service 7: Web Maps & Dashboards -->
+    <div class="service__card">
+      <div class="service__icon">
+        <img src="./images/webmap.jpg" alt="Web Maps & Dashboards">
+      </div>
+      <h3 class="service__title">Web Maps & Dashboards</h3>
+      <p class="service__description">
+        Interactive dashboards, web mapping apps, geospatial APIs and cloud deployment for visualization/monitoring.
+      </p>
+    </div>
+
+    <!-- Service 8: Research Support & Consultancy -->
+    <div class="service__card">
+      <div class="service__icon">
+        <img src="./images/research.jpg" alt="Research Support & Consultancy">
+      </div>
+      <h3 class="service__title">Research Support & Consultancy</h3>
+      <p class="service__description">
+        Study design, manuscript/data analysis, reproducible workflows, training and technical reports.
+      </p>
+    </div>
+
+  </div>
+</section>
+ 
+        <!-- ===== Footer =====  -->
+<footer id="contact">
+  <div class="l-footer">
+    <div class="message bd-grid">
+      <div class="left-contact">
+        <h1>Looking to connect? </h1>
+      </div>
+      
+      <form action="https://formsubmit.co/satyamshah444@gmail.com" id="form" method="POST">
+        <!-- Anti-spam honeypot field -->
+        <input type="text" name="_honey" style="display:none">
+        
+        <!-- Disable captcha -->
+        <input type="hidden" name="_captcha" value="false">
+        
+        <!-- Success page redirect (create a thanks.html page or remove this line) -->
+        <input type="hidden" name="_next" value="https://satyamspace.github.io/thanks.html">
+        
+        <div class="form-body">
+          <div class="form-holder">
+            <div class="form-content">
+              <div class="form-items">
+                <div class="top-row">
+                  <div class="field-wrap form-floating">
+                    <label for="floatingName">Your Name</label>
+                    <input name="name" type="text" class="form-control" id="floatingName" placeholder="Firstname Lastname" required>
+                  </div>
+                  <div class="field-wrap form-floating">
+                    <label for="floatingInput">Email address</label>
+                    <input name="email" type="email" class="form-control" id="floatingInput" placeholder="name@example.com" required>
+                  </div>
+                </div>
+                <div class="oth-row">
+                  <div class="field-wrap form-floating">
+                    <label for="floatingMessage">Message</label>
+                    <textarea name="message" class="form-control" id="floatingMessage" placeholder="Message" required></textarea>
+                  </div>
+                </div>
+                <div class="oth-row submit-row">
+                  <div class="form-button mt-3" id="submit">
+                    <button type="submit" class="btn button btn-primary">Send</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </form>
+      
+      <div class="left-contact">
+      </div>
+ 
